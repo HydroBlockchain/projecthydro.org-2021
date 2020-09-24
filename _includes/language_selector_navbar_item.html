@@ -1,0 +1,34 @@
+<div class="Languages">
+  <div class="Language-select">
+    <select class="Languages-btns" onchange="location = this.value;">
+      {% for lang in site.languages %} {% if site.lang == lang %} {% if
+      site.default_lang == lang %}
+      <option
+        value="{{ site.baseurl_root }}{{ page.url }}"
+        class="Language-btn"
+        selected
+        >{{ site.language_names[lang].short }}</option
+      >
+      {% else %}
+      <option
+        value="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}"
+        class="Language-btn"
+        selected
+        >{{ site.language_names[lang].short }}</option
+      >
+
+      {% endif %} {% else %} {% if site.default_lang == lang %}
+      <option value="{{ site.baseurl_root }}{{ page.url }}" class="Language-btn"
+        >{{ site.language_names[lang].short }}</option
+      >
+      {% else %}
+      <option
+        value="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}"
+        class="Language-btn"
+        >{{ site.language_names[lang].short }}</option
+      >
+
+      {% endif %} {% endif %} {% endfor %}
+    </select>
+  </div>
+</div>

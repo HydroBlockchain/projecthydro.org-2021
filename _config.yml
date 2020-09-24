@@ -1,0 +1,28 @@
+baseurl: ""
+url: "https://projecthydro.org"
+
+# Do not copy these files to the build folder
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - scripts
+ - Rakefile
+ - README.md
+ - .bundle
+ - vendor
+ - setup.md
+
+gems:
+ - jekyll-multiple-languages-plugin
+
+# Localization config
+
+languages: ["en", "swe"]
+
+language_names:
+  en:
+    short: en
+    full: English
+  swe:
+    short: swe
+    full: Swedish

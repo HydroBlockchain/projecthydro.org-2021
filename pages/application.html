@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html xml:lang="en-GB" lang="en-GB">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="QUEWXblJgvi_M5ZvPG4WNPr_xY3aMQxqPV4U1iBmxHk" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Project Hydro</title>
+  <link href="/pages/css/application.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript">
+    function ValidateForm(frm) {
+      if (frm.First_Name.value == "") {
+        alert('First name is required.');
+        frm.First_Name.focus();
+        return false;
+      }
+      if (frm.Last_Name.value == "") {
+        alert('Last name is required.');
+        frm.Last_Name.focus();
+        return false;
+      }
+      if (frm.Email_Address.value == "") {
+        alert('Email address is required.');
+        frm.Email_Address.focus();
+        return false;
+      }
+      if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {
+        alert('Please enter a valid email address.');
+        frm.Email_Address.focus();
+        return false;
+      }
+      if (frm.Position.value == "") {
+        alert('Position is required.');
+        frm.Position.focus();
+        return false;
+      }
+      if (frm.skip_CaptchaCode.value == "") {
+        alert('Enter security code.');
+        frm.skip_CaptchaCode.focus();
+        return false;
+      }
+      return true;
+    }
+
+    function ReloadCaptchaImage(captchaImageId) {
+      var obj = document.getElementById(captchaImageId);
+      var src = '' + obj.src;
+      obj.src = '';
+      var date = new Date();
+      var pos = src.indexOf('&rad=');
+      if (pos >= 0) {
+        src = src.substr(0, pos);
+      }
+      obj.src = src + '&rad=' + date.getTime();
+      return false;
+    }
+  </script>
+
+<body>
+
+  <div class="wrapper">
+
+    <h2>dAmbassador Application</h2>
+
+    <form action="https://www.SnapHost.com/captcha/WebFormSubmit.aspx" id="UploadForm" enctype="multipart/form-data" method="post" target="_top" onsubmit="return ValidateForm(this);">
+      <input id="SnapHostID" name="SnapHostID" type="hidden" value="7BRM3PKSZDBJ" />
+
+      <table border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td>
+            First name *<br />
+            <input name="First_Name" type="text" maxlength="50" />
+          </td>
+          <td>
+            Last name *<br />
+            <input name="Last_Name" type="text" maxlength="50" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Email *<br />
+            <input name="Email_Address" type="text" maxlength="100" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            LinkedIn URL<br />
+            <input name="LinkedIn" type="text" maxlength="255" value="" />
+          </td>
+          <td>
+            Twitter URL<br />
+            <input name="Twitter" type="text" maxlength="50" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Position you are applying for *<br />
+            <input name="Position" type="text" maxlength="100" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Github URL<br />
+            <input name="Github" type="text" maxlength="50" />
+          </td>
+          <td>
+            Telegram Handle<br />
+            <input name="Telegram" type="text" maxlength="50" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Short Introduction *<br />
+            <textarea name="Introduction" rows="6" maxlength="3000"></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <input type="file" name="file1" />
+
+      <div class="bottom">
+        <div class="left">
+          <a href="https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"><img id="CaptchaImage3" alt="Web Form Code" style="border:1px solid #999999;" src="https://www.SnapHost.com/captcha/WebForm.aspx?id=7BRM3PKSZDBJ&ImgType=2" /></a>
+          <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage3');"><span style="font-size:10px;">reload image</span></a>
+        </div>
+        <div class="right">
+          <label> Enter Captcha code </label>
+          <input name="CaptchaCode" type="text" maxlength="6" />
+        </div>
+      </div>
+      <div class="placement">
+        <input name="skip_Submit" type="submit" />
+      </div>
+    </form>
+  </div>
+</body>

@@ -1,0 +1,24 @@
+<meta charset="utf-8"/>
+<meta name="author" content="Ulviux"/>
+<meta name="description" content="Project Hydro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Hydro, Security, DeFi, API, Fintech, Blockchain">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Project Hydro</title>
+
+{% include favicons.html %}
+<!-- Open Graph data -->
+<meta property="og:title" content="{% t page.title %}"/>
+<meta property="og:description" content="{% t page.description %}"/>
+<meta property="og:description" content="Hydro"/>
+
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
+{% for lang in site.languages %}
+  {% if site.default_lang == lang %}
+    <link rel="alternate" href="{{ site.url }}{{ site.baseurl_root }}{{ page.url }}" hreflang="{{lang}}">
+    <link rel="alternate" href="{{ site.url }}{{ site.baseurl_root }}{{ page.url }}" hreflang="x-default">
+  {% else %}
+    <link rel="alternate" href="{{ site.url }}/{{ site.baseurl_root }}{{ lang }}{{ page.url }}" hreflang="{{lang}}">
+  {% endif %}
+{% endfor %}

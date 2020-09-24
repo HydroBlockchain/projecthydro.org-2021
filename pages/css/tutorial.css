@@ -1,0 +1,86 @@
+body {
+  margin: 1rem !important;
+}
+
+.wrapper-test-ether {
+  background: #1f354d;
+  width: 50% auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.wrapper-privacy {
+  background: #1f354d;
+  width: 50% auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: flex-start;
+}
+
+.privacy-step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.prelude {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.ending-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.tutorial-button{
+  text-decoration: none;
+  font-size: 14px !important;
+  padding: 1rem;
+  background: #1A293C;
+  color: #8ab5cd;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tutorial-button:hover{
+  background: #0d1621;
+  color: #8ab5cd;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 300;
+}

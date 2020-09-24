@@ -1,0 +1,173 @@
+meta:
+  description: Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identities, and transactions.
+  title: Project Hydro
+# first section
+hydro_title: Project Hydro
+hydro_is: Hydro is a decentralized ecosystem using cutting-edge cryptography to secure user accounts, identities, and transactions.
+
+# ecosystem section
+ecosystem_title: Ecosystem
+ecosystem_subline: An interconnected smart-contract based security suite.
+
+#protocol section
+protocol_title: Protocols
+protocol_subline: Discover our protocols!
+
+# protocols description
+raindrop_text: Raindrop is an authentication protocol which vastly improves upon current
+  2FA standards with decentralized public blockchain security for logins,
+  transactions, and payments.
+snowflake_text: Snowflake is an identity protocol designed to protect private data from
+  identity theft on the blockchain by providing a major barrier to identity
+  theft attempts.
+ice_text: Ice is a document signing and verification protocol which will allow users
+  to stamp, authenticate, verify and seal any document or contract that is
+  sent.
+tide_text: Tide is a payment protocol which will allow for one-click authorization of
+  debit and credit POS transactions, as well as instantaneous p2p, p2b, and
+  b2b payments across the blockchain.
+hail_text: Hail is tokenization on the blockchain. Under the hood it is a framework of
+  Solidity Smart Contracts which work on top of the Hydro Snowflake protocol.
+mist_text: Mist is an artificial intelligence that will create data
+  modeling of transactions to enable fraud detection on the blockchain and safeguard clients from losing funds.
+
+# team section
+team_title: Get to know the team!
+team_subline: Project Hydros dAmbassadors govern the project through the Hydro Foundation.
+team_contact: Contact us
+
+#team position
+team_saurav: President
+team_carl: Vice President
+team_alexander: Secretary
+team_srinivas: Chief Technology Officer
+team_rai: Community Lead
+team_stephen: Marketing Lead
+team_ana: Social Media Lead
+team_jignesh: Lead Writer & Developer
+team_njoku: Lead Developer
+team_devis: Fullstack Developer
+team_naveen: Machine Learning Engineer
+team_mathew: Machine Learning Engineer
+team_phi: Community Manager
+team_dell: Marketing & Designer
+team_pri: Writer
+team_aijhon: Biz dev
+team_folo: Biz dev
+team_ayu: Solidity Developer
+team_sam: Solidity Developer
+team_marlo: Graphic Designer
+
+# contact us
+contact_name: Name
+contact_email: Email
+contact_message: Message
+button_send: Send
+button_close: Close
+
+# roadmap section
+roadmap_title: Roadmap
+roadmap_subline: Discover project Hydros roadmap and learn what we are developing.
+
+# quarters
+q3_2020: Q3 2020
+q4_2020: Q4 2020
+q1_2021: Q1 2021
+q2_2021: Q2 2021
+
+# Products
+product_title: Product
+product_roadmap_wallet: Hydro Wallet (Alpha)
+product_roadmap_remittance: Remittance (Alpha)
+product_roadmap_dappstore: Hydro dAppstore
+product_roadmap_voting: Voting dApp
+product_roadmap_donation: Donation dApp
+product_roadmap_lottery: Lottery dApp
+product_roadmap_crowdfunding: Crowdfunding dApp
+product_roadmap_password: Password Manager dApp
+product_roadmap_dating: Dating dApp
+product_roadmap_gift: Gift Card dApp
+product_roadmap_freelance: Freelancing Job dApp
+product_roadmap_sidechain: Hydro Sidechain
+product_roadmap_dex: Hydro DEX
+product_roadmap_mist: Mist Integration
+
+# Protocol
+protocol_title: Protocol
+protocol_roadmap_snowflake_update: Update snowflake to Solidity 0.7.0
+protocol_roadmap_raindrop_update: Update Raindrop to Solidity 0.7.0
+protocol_roadmap_tide_update: Update Tide to Solidity 0.7.0
+protocol_roadmap_ice_update: Update Ice to Solidity 0.7.0
+protocol_roadmap_hail_update: Update Hail to Solidity 0.7.0
+protocol_roadmap_token_burn: Token burn Implementation
+protocol_roadmap_oracle: Hydro Oracle Smart Contract
+protocol_roadmap_mist_wp: Mist Whitepaper
+protocol_roadmap_mist: Mist Protocol
+text_mist_overlay: Mist Whitepaper to <br> be announced!
+text_solidity_update: Raindrop will be updated to <br> the latest version of solidity.
+
+# Wallet
+wallet_title: Wallet
+wallet_1: Alpha version
+wallet_2: Hydro Staking
+wallet_3: Hydro Loans
+wallet_4: Buying & selling with fiat
+wallet_5: Anonymous Transactions
+wallet_6: Mist Integration
+
+# Remittance
+remittance_title: Remittance
+remittance_1: Alpha Version
+remittance_2: Live in Europe
+remittance_3: Live in Asia
+remittance_4: Live on other continents
+
+# Marketing
+marketing_title: Marketing
+marketing_1: Tutorials
+marketing_2: Influencers
+marketing_3: Rebranding
+marketing_4: SEO/SEM campaign
+marketing_5: Hydro Bounty Program
+marketing_6: Hydro Growth Squad
+marketing_7: Marketing company
+marketing_8: Mailing list
+marketing_9: Community-focused marketing
+marketing_10: Writing contest
+marketing_11: Social Media Ads
+marketing_12: Mist Marketing
+
+# Snowflake dappstore
+dappstore_title: Snowflake dAppstore
+dappstore_subline: Discover project Hydros dAppstore and try out some dApps!
+
+# Exchanges
+exchanges_title: Exchanges
+
+# Partners
+partners_title: Partners
+
+# Hydro documentation
+documentation_title: Documentation
+
+# Join DA
+joinda_title: Join to the DA Team!
+joinda_button: Apply
+
+# Tutorials
+tutorial_title: Tutorials
+tutorial_1: Best practices
+tutorial_2: Testnet Ether
+tutorial_3: Testnet Hydro
+tutorial_4: dAppstore walkthrough
+tutorial_5: What is snowflake?
+
+# Snippets
+snippets_title: Snippets
+snippets_1: dApps Allowance
+snippets_2: Setting up resolver
+snippets_3: Use Material imports
+
+# Privacy Policy
+privacy_title: Privacy Policy
+privacy_1: Privacy Policy

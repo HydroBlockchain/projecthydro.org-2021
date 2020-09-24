@@ -1,0 +1,169 @@
+meta:
+  description: Hydro är ett decentraliserat ekosystem som använder sig utav modern kryptografi för att säkra användares konton, indentiteter och transaktioner.
+  title: Projekt Hydro
+# first section
+hydro_title: Projekt Hydro
+hydro_is: Hydro är ett decentraliserat ekosystem som använder sig utav modern kryptografi för att säkra användares konton, indentiteter och transaktioner.
+
+# ecosystem section
+ecosystem_title: Ekosystem
+ecosystem_subline: Ett sammanvävt smart kontrakts baserad säkerthets svit.
+
+#protocol section
+protocol_title: Protokoll
+protocol_subline: Lär känna våra protokoll!
+
+# protocols description
+raindrop_text: Raindrop är ett autentisering protokol som förbättrar dagens 2FA standard med
+  decentraliserad blockchain säkerthet för inlogg, transaktioner och betalningar.
+snowflake_text: Snowflake är ett identitets protokol designat för att skydda privat data från
+  identitets stöld ovanpå blockkedjan genom att tillhandahålla en barriär mot identitets stöld.
+ice_text: Ice är ett dokument signerings och verifikations protokoll som tillåter användaren att
+  märka, autentisera, verifiera och försegla alla dokument eller contract som skickas.
+tide_text: Tide är ett betalningsprotokoll som tillåter autentisering utav en klicks betalningar av debit och credit POS transaktioner.
+  Även ögonblickliga P2P, P2B och B2B betalningar över blockkedjan.
+hail_text: Hail är tokenisering ovan på blockkedjan. Under huven finns ett ramverk av Solidity
+  smarta kontrakt som agerar ovanpå Hydros Snowflake protokol.
+mist_text: Mist är en artificiell intelligens som skapar modeller utav transaktioner i blockkedjan
+  för att kunna se mönster i fraudulenta transaktioner och skydda användaren från att förlora sina tillgångar.
+
+# team section
+team_title: Lär känna teamet!
+team_subline: Projekt Hydros dAmbassadörer ser över projektet genom Hydro stiftelsen.
+team_contact: Kontakta oss
+
+#team position
+team_saurav: President
+team_carl: Vice President
+team_alexander: Sekreterare
+team_srinivas: Chefs Teknologi officerare
+team_rai: Community Ledare
+team_stephen: Marketing Chef
+team_ana: Social Media Chef
+team_jignesh: Skribent & Utvecklare
+team_njoku: Solidity Utvecklare
+team_devis: Fullstack Utvecklare
+team_naveen: Machine Learning Ingenjör
+team_mathew: Machine Learning Ingenjör
+team_phi: Community Chef
+team_dell: Marketing & Designer
+team_pri: Skribent
+team_aijhon: Affärs Utvecklare
+team_folo: Affärs Utvecklare
+team_ayu: Solidity Utvecklare
+team_sam: Solidity Utvecklare
+team_marlo: Grafisk Designer
+
+# contact us
+contact_name: Namn
+contact_email: Email
+contact_message: Meddelande
+button_send: Skicka
+button_close: Stäng
+
+# roadmap section
+roadmap_title: Roadmap
+roadmap_subline: Upptäck Projekt Hydros Roadmap och vad vi utvecklar just nu.
+
+# quarters
+q3_2020: Q3 2020
+q4_2020: Q4 2020
+q1_2021: Q1 2021
+q2_2021: Q2 2021
+
+# Products
+product_title: Produkter
+product_roadmap_wallet: Hydro Plånbok (Alpha)
+product_roadmap_remittance: Remittance (Alpha)
+product_roadmap_dappstore: Hydro dAppstore
+product_roadmap_voting: Röstnings dApp
+product_roadmap_donation: Välgörenhets dApp
+product_roadmap_lottery: Lotteri dApp
+product_roadmap_crowdfunding: Crowdfunding dApp
+product_roadmap_password: Lösenordshanterare dApp
+product_roadmap_dating: Dating dApp
+product_roadmap_gift: Presentkorts dApp
+product_roadmap_freelance: Freelancing Job dApp
+product_roadmap_sidechain: Hydro Sidechain
+product_roadmap_dex: Hydro DEX
+product_roadmap_mist: Mist Integration
+
+# Protocol
+protocol_title: Protokol
+protocol_roadmap_snowflake_update: Updatera snowflake till Solidity 0.7.0
+protocol_roadmap_raindrop_update: Updatera Raindrop till Solidity 0.7.0
+protocol_roadmap_tide_update: Updatera Tide till Solidity 0.7.0
+protocol_roadmap_ice_update: Updatera Ice till Solidity 0.7.0
+protocol_roadmap_hail_update: Updatera Hail till Solidity 0.7.0
+protocol_roadmap_token_burn: Token burn Implementation
+protocol_roadmap_oracle: Hydro Oracle Smart Contract
+protocol_roadmap_mist_wp: Mist Whitepaper
+protocol_roadmap_mist: Mist Protokol
+text_mist_overlay: Vi släpper Mist Whitepaper!
+text_solidity_update: Raindrop uppdateras till <br> senaste versionen av Solidity.
+
+# Wallet
+wallet_title: Plånbok
+wallet_1: Alpha version
+wallet_2: Hydro Staking
+wallet_3: Hydro Lån
+wallet_4: Köp och sälj med fiat
+wallet_5: Anonyma transaktioner
+wallet_6: Mist Integreras
+
+# Remittance
+remittance_title: Remittance
+remittance_1: Alpha Version
+remittance_2: Live i Europa
+remittance_3: Live i Asien
+remittance_4: Live på andra kontinenter
+
+# Marketing
+marketing_title: Marketing
+marketing_1: Tutorials
+marketing_2: Influencers
+marketing_3: Rebranding
+marketing_4: SEO/SEM campaign
+marketing_5: Hydro Bounty Program
+marketing_6: Hydro Growth Squad
+marketing_7: Marketing company
+marketing_8: Mailing list
+marketing_9: Community-focused marketing
+marketing_10: Writing contest
+marketing_11: Social Media Ads
+marketing_12: Mist Marketing
+
+# Snowflake dappstore
+dappstore_title: Snowflake dAppstore
+dappstore_subline: Upptäck Projekt Hydros dAppstore och testa lite dApps!
+
+# Exchanges
+exchanges_title: Exchanges
+
+# Partners
+partners_title: Partners
+
+# Hydro documentation
+documentation_title: Hydro Dokumentation
+
+# Join DA
+joinda_title: Ansök till DA teamet!
+joinda_button: Ansök
+
+# Tutorials
+tutorial_title: Tutorials
+tutorial_1: God praxis
+tutorial_2: Testnet Ether
+tutorial_3: Testnet Hydro
+tutorial_4: dAppstore genomgång
+tutorial_5: Vad är Snowflake?
+
+# Snippets
+snippets_title: Snippets
+snippets_1: dApps Allowance
+snippets_2: Konfigurera resolver
+snippets_3: Använd Material imports
+
+# Privacy Policy
+privacy_title: Privacy Policy
+privacy_1: Privacy Policy
