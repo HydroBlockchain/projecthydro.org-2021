@@ -2774,8 +2774,31 @@ a:hover {
 }
 
 @media screen and (max-width:736px) {
+  #exchange-column-2 {
+    margin-top: 2rem !important;
+  }
+
+  #exchanges-partner-structure {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  #partner-structure {
+    margin-top: -3rem;
+  }
+
+  #footer-structure {
+    margin-top: -3rem;
+  }
+
   .link-column {
     margin-top: 0rem !important;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .link-column>a {
+    padding: 1rem;
   }
 
   .contact-icons {
