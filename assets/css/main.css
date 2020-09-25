@@ -2696,10 +2696,11 @@ a:hover {
   display: flex;
   flex-direction: column !important;
   text-align: center;
-  margin-top: 21rem;
+  margin-top: 20rem;
 }
 
 .link-column>a {
+  padding-right: 2rem;
   cursor: pointer;
   font-weight: bold !important;
   font-size: 16px;
@@ -2799,6 +2800,7 @@ a:hover {
 
   .link-column>a {
     padding: 1rem;
+    padding-right:0rem;
   }
 
   .contact-icons {

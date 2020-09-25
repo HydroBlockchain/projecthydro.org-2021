@@ -103,8 +103,8 @@ protocol_roadmap_token_burn: Token burn Implementation
 protocol_roadmap_oracle: Hydro Oracle Smart Contract
 protocol_roadmap_mist_wp: Mist Whitepaper
 protocol_roadmap_mist: Mist Protocol
-text_mist_overlay: Mist Whitepaper to <br> be announced!
-text_solidity_update: Raindrop will be updated to <br> the latest version of solidity.
+text_mist_overlay: Mist Whitepaper to be announced!
+text_solidity_update: Raindrop will be updated to the latest version of solidity.
 
 # Wallet
 wallet_title: Wallet
@@ -145,7 +145,8 @@ dappstore_subline: Discover project Hydros dAppstore and try out some dApps!
 exchanges_title: Exchanges
 
 # Partners
-partners_title: Partners
+partners_media_title: Media <br> Partners
+partners_integration_title: Integration <br> Partners
 
 # Hydro documentation
 documentation_title: Documentation
