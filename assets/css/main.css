@@ -2774,15 +2774,15 @@ a:hover {
   padding-top: 2.5rem;
 }
 
-#partner-structure>.partner_column>h3{
-  font-size: 15px!important;
-  padding-left: 3rem!important;
+#partner-structure>.partner_column>h3 {
+  font-size: 15px !important;
+  padding-left: 3rem !important;
 }
 
 @media screen and (max-width:736px) {
-  #partner-structure>.partner_column>h3{
-    font-size: 16px!important;
-    padding-left: 0rem!important;
+  #partner-structure>.partner_column>h3 {
+    font-size: 16px !important;
+    padding-left: 0rem !important;
   }
 
   #exchange-column-2 {
@@ -2810,7 +2810,7 @@ a:hover {
 
   .link-column>a {
     padding: 1rem;
-    padding-right:0rem;
+    padding-right: 0rem;
   }
 
   .contact-icons {
