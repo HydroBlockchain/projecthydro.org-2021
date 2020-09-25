@@ -2777,6 +2777,7 @@ a:hover {
 #partner-structure>.partner_column>h3 {
   font-size: 15px !important;
   padding-left: 3rem !important;
+  padding-bottom: 0.6rem;
 }
 
 @media screen and (max-width:736px) {
