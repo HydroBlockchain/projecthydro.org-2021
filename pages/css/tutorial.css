@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper-test-ether {
-  background: #1f354d;
+  background: transparent;
   width: 50% auto;
   border-radius: 10px;
   display: flex;
