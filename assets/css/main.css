@@ -1030,7 +1030,7 @@ ul.contact-icons>li a {
   transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out, color .2s ease-in-out;
   background-color: #1a293c;
   border: 0;
-  border-radius: .25rem;
+  border-radius: .5rem;
   color: #7db5d2 !important;
   cursor: pointer;
   display: inline-block;
@@ -1157,6 +1157,7 @@ ul.contact-icons>li a {
   -ms-align-items: -ms-stretch;
   align-items: stretch;
   height: 100%;
+  border-radius: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
   margin-right: 1rem;
@@ -2313,7 +2314,7 @@ label {
 .da-member {
   background: #1a293c;
   color: #7db5d2;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 2rem
 }
 
@@ -2361,9 +2362,10 @@ label {
 }
 
 .da-pic {
-  padding-top: 10px;
-  padding-bottom: 15px;
-  opacity: 1 !important
+  margin-top: 10px;
+  margin-bottom: 15px;
+  opacity: 1 !important;
+  border-radius: 0.5rem!important;
 }
 
 #overlayContactUs, #overlayMist, #overlayRaindrop, #overlayDocs, #overlayTutorial, #overlaySnippets {
@@ -2620,12 +2622,12 @@ img:hover {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 0 0 5rem;
-  border-radius: 1rem
+  border-radius: 1rem!important;
 }
 
 .Languages .Languages-btns {
   background-color: #1f354d !important;
-  border-radius: 1rem
+  border-radius: 0.5rem!important;
 }
 
 .Languages .Language-select {
@@ -2779,6 +2781,10 @@ a:hover {
 }
 
 @media screen and (max-width:736px) {
+
+  .panel{
+    border-radius: 0rem;
+  }
 
   #partner-structure>.partner_column>h3 {
     font-size: 16px !important;
