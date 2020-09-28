@@ -1630,9 +1630,7 @@ ul.contact-icons>li a {
   }
 
   .panel>.intro {
-    padding: 2.8875rem 1.75rem 1.3875rem 1.75rem;
     width: 100% !important;
-    height: 500px auto;
     align-items: center
   }
 
@@ -2374,13 +2372,13 @@ label {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .79);
   z-index: 2;
   cursor: pointer
 }
+
 
 #text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
   background: #1a293c !important;
@@ -2696,7 +2694,7 @@ a:hover {
   display: flex;
   flex-direction: column !important;
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 23rem;
 }
 
 .link-column>a {
@@ -2781,6 +2779,7 @@ a:hover {
 }
 
 @media screen and (max-width:736px) {
+
   #partner-structure>.partner_column>h3 {
     font-size: 16px !important;
     padding-left: 0rem !important;
@@ -2810,7 +2809,7 @@ a:hover {
   }
 
   .link-column>a {
-    padding: 1rem;
+    padding: 0rem;
     padding-right: 0rem;
   }
 

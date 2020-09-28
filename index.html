@@ -721,17 +721,7 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Link columns with overlay buttons-->
-          <div class="inner columns aligned">
-            <div class="link-column">
-              <a onclick="overlayDocs()" target="_blank" rel="noreferrer">{% t documentation_title %}</a>
-              <a onclick="overlayTutorial()" target="_blank" rel="noreferrer">{% t tutorial_title %}</a>
-              <a onclick="overlaySnippets()" target="_blank" rel="noreferrer">{% t snippets_title %}</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Links overlay -->
+        <!-- Documentation overlay -->
 
         <div id="overlayDocs" onclick="closeDocs()">
           <div id="text-Docs">
@@ -740,33 +730,7 @@ description: meta.description
               <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
               <a href="pages/application.html" target="_blank" rel="noreferrer">Apply to the DA Team</a>
               <a href="pages/privacy-policy.html" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tutorial overlay -->
-
-        <div id="overlayTutorial" onclick="closeTutorial()">
-          <div id="text-tutorial">
-            <div class="broaden">
-              <a href="pages/tutorial/dappstore-best-practices.html" target="_blank" rel="noreferrer">{% t tutorial_1 %}</a>
-              <a href="pages/tutorial/test-ether.html" target="_blank" rel="noreferrer">{% t tutorial_2 %}</a>
-              <a href="pages/tutorial/test-hydro.html" target="_blank" rel="noreferrer">{% t tutorial_3 %}</a>
-              <a href="pages/tutorial/walkthrough.html" target="_blank" rel="noreferrer">{% t tutorial_4 %}</a>
-              <a href="pages/tutorial/what-is-snowflake.html" target="_blank" rel="noreferrer">{% t tutorial_5 %}</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Snippets overlay -->
-
-        <div id="overlaySnippets" onclick="closeSnippets()">
-          <div id="text-snippets">
-            <div class="broaden">
-              <a href="pages/snippets/setting-up-your-dapps-allowance.html" target="_blank" rel="noreferrer">{% t snippets_1 %}</a>
-              <a href="pages/snippets/setting-up-your-resolver.html" target="_blank" rel="noreferrer">{% t snippets_2 %}</a>
-              <a href="pages/snippets/use-material-imports.html" target="_blank" rel="noreferrer">{% t snippets_3 %}</a>
-              <a href="pages/tutorial-index.html" target="_blank" rel="noreferrer">Tutorial index</a>
+              <a href="pages/tutorial-portal.html" target="_blank" rel="noreferrer">Tutorial Portal</a>
             </div>
           </div>
         </div>
@@ -775,6 +739,12 @@ description: meta.description
       <!-- Social media section -->
 
       <section class="panel">
+        <div class="intro">
+          <h2 class="major">Hydro Community</h2>
+          <p>Visit project hydros official blog or any of our social media accounts to get the latest updates and interact with the Hydro Community!</p>
+          <a href="https://blog.projecthydro.org" target="_blank" rel="noreferrer" class="button">Hydro Blog</a> <br>
+          <a onclick="overlayDocs()" class="button">{% t documentation_title %}</a>
+        </div>
         <div class="inner columns divided" id="footer-structure">
           <div class="span-1-2">
             <ul class="contact-icons">
