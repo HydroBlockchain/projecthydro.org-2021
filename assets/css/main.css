@@ -2700,6 +2700,10 @@ a:hover {
   opacity: 1 !important;
 }
 
+#ecosystem-pic {
+  opacity: 1 !important;
+}
+
 #overlay-mist {
   cursor: pointer;
 }
@@ -2719,8 +2723,11 @@ a:hover {
 }
 
 /* Mobile Fixes */
-
 @media screen and (max-width:736px) {
+  #ecosystem-pic {
+    height: 300px;
+  }
+
   .panel {
     border-radius: 0rem;
   }
@@ -2813,23 +2820,19 @@ a:hover {
 @media (prefers-color-scheme: light) {
   #page-wrapper {
     background: white !important;
-    color: black !important;
   }
 
   .Languages .Languages-btns {
-    background-color: lightgrey !important;
-    color: black !important;
-    border-radius: 0.5rem !important;
+    background-color: #ebebeb !important;
+    color: #5d5c5c !important;
   }
 
   .panel {
-    background-color: lightgrey !important;
-    color: black !important;
+    background-color: #ebebeb !important;
   }
 
   .panel.banner .content {
-    background: lightgrey !important;
-    color: black !important;
+    background: #ebebeb !important;
   }
 
   a, b, body, center, div, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, p, q, s, section, span, ul {
@@ -2837,20 +2840,12 @@ a:hover {
   }
 
   .button, button, input[type=button], input[type=reset], input[type=submit] {
-    background-color: grey !important;
-    color: white !important;
+    background-color: #c8c8c8 !important;
+    color: #5d5c5c !important;
   }
 
   .da-member {
-    background-color: grey !important;
-  }
-
-  .da-name {
-    color: white !important;
-  }
-
-  .da-position {
-    color: white !important;
+    background-color: #c8c8c8 !important;
   }
 
   .transparent-icon:before {
@@ -2869,5 +2864,29 @@ a:hover {
 
   #protocol_title, a {
     margin-left: 1rem;
+  }
+
+  #overlayContactUsText {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
+  }
+
+  label.fcf-label {
+    color: #5d5c5c !important;
+  }
+
+  textarea.fcf-form-control {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
+    border: 1px solid #fff !important;
+  }
+
+  .button-contact-us {
+    background: #c8c8c8 !important;
+  }
+
+  #text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
   }
 }

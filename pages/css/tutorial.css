@@ -269,29 +269,3 @@ h5 {
   text-align: center;
   color: #8ab5cd;
 }
-
-/* Notice */
-.notice {
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  background: #F2F2F2;
-  color: #5A3B5D;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  z-index: 100;
-  text-align: center;
-}
-
-.notice strong {
-  font-weight: 700;
-}
-
-.notice a {
-  padding: 2px 3px;
-  background: #FEDC2A;
-  text-decoration: none;
-}
