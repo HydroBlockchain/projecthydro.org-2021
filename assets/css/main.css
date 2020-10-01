@@ -2365,7 +2365,7 @@ label {
   margin-top: 10px;
   margin-bottom: 15px;
   opacity: 1 !important;
-  border-radius: 0.5rem!important;
+  border-radius: 0.5rem !important;
 }
 
 #overlayContactUs, #overlayMist, #overlayRaindrop, #overlayDocs, #overlayTutorial, #overlaySnippets {
@@ -2380,7 +2380,6 @@ label {
   z-index: 2;
   cursor: pointer
 }
-
 
 #text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
   background: #1a293c !important;
@@ -2622,12 +2621,12 @@ img:hover {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 0 0 5rem;
-  border-radius: 1rem!important;
+  border-radius: 1rem !important;
 }
 
 .Languages .Languages-btns {
   background-color: #1f354d !important;
-  border-radius: 0.5rem!important;
+  border-radius: 0.5rem !important;
 }
 
 .Languages .Language-select {
@@ -2781,8 +2780,7 @@ a:hover {
 }
 
 @media screen and (max-width:736px) {
-
-  .panel{
+  .panel {
     border-radius: 0rem;
   }
 
@@ -2867,5 +2865,70 @@ a:hover {
 
   .Languages {
     padding: .8875rem 1.75rem 1.3875rem 1.75rem
+  }
+}
+
+/* Light mode */
+
+@media (prefers-color-scheme: light) {
+
+  #page-wrapper {
+    background: white !important;
+    color: black !important;
+  }
+
+  .Languages .Languages-btns {
+    background-color: lightgrey !important;
+    color: black !important;
+    border-radius: 0.5rem !important;
+  }
+
+  .panel {
+    background-color: lightgrey !important;
+    color: black !important;
+  }
+
+  .panel.banner .content {
+    background: lightgrey !important;
+    color: black !important;
+  }
+
+  a, b, body, center, div, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, p, q, s, section, span, ul {
+    color: #5d5c5c !important;
+  }
+
+  .button, button, input[type=button], input[type=reset], input[type=submit] {
+    background-color: grey !important;
+    color: white !important;
+  }
+
+  .da-member {
+    background-color: grey !important;
+  }
+
+  .da-name {
+    color: white !important;
+  }
+
+  .da-position {
+    color: white !important;
+  }
+
+  .transparent-icon:before {
+    color: #5d5c5c !important;
+  }
+
+  .exchange-pic {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    opacity: 0.7;
+  }
+
+  .protocol-pic {
+    display: none;
+  }
+
+  #protocol_title, a{
+    margin-left:1rem;
   }
 }
