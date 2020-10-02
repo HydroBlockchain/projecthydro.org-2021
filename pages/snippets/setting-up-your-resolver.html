@@ -3,66 +3,48 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="author" content="Ulviux" />
+  <meta name="keywords" content="Hydro, Security, DeFi, API, Fintech, Blockchain">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="QUEWXblJgvi_M5ZvPG4WNPr_xY3aMQxqPV4U1iBmxHk" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <title>Setting up your resolver</title>
-  <link href="/pages/css/application.css" rel="stylesheet" type="text/css" />
   <link href="/pages/css/tutorial.css" rel="stylesheet" type="text/css" />
-
-  <script>
-
-  </script>
+  <title>Setting up your resolver</title>
+</head>
 
 <body>
-
-  <div class="wrapper-test-ether" style="">
-    <h1>Setting up your resolver</h1>
-
-    <div class="prelude">
-      <h3>Intro</h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="step">
-      <h3></h3>
-      <h5></h5>
-    </div>
-
-    <div class="ending-credits">
-      <h5></h5>
-      <br>
-      <br>
-      <a href="https://projecthydro.org" target="_blank" class="tutorial-button">Take me back!</a>
-    </div>
-
+  <button id="burger" class="open-main-nav">
+    <span class="burger"></span>
+    <span class="burger-text">Menu</span>
+  </button>
+  <nav class="main-nav" id="main-nav">
+    <ul>
+      <li><a id="menu-link" href="/index.html">Home</a></li>
+      <li><a id="menu-link" href="/pages/tutorial/test-ether.html">Test Ether</a></li>
+      <li><a id="menu-link" href="/pages/tutorial/test-hydro.html">Test Hydro</a></li>
+      <li><a id="menu-link" href="/pages/tutorial/what-is-snowflake.html">Snowflake</a></li>
+      <li><a id="menu-link" href="/pages/tutorial/dappstore-best-practices.html">Best practices</a></li>
+      <li><a id="menu-link" href="/pages/snippets/setting-up-your-dapps-allowance.html">dApp Allowance</a></li>
+      <li><a id="menu-link" href="/pages/snippets/setting-up-your-resolver.html">Resolver</a></li>
+      <li><a id="menu-link" href="/pages/snippets/use-material-imports.html">Material Imports</a></li>
+    </ul>
+  </nav>
   </div>
-
+  </div>
+  <div class="wrapper">
+    <h1>Setting up your resolver</h1>
+  </div>
 </body>
+
+<script type="text/javascript">
+  let burger = document.getElementById('burger'),
+    nav = document.getElementById('main-nav'),
+    link = document.getElementById('menu-link')
+
+  burger.addEventListener('click', function(e) {
+    this.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
+  });
+</script>

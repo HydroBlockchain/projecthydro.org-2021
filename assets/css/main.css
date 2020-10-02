@@ -111,6 +111,21 @@ input, select, textarea {
   }
 }
 
+blockquote {
+  border-left: solid 0rem rgba(255, 255, 255, 0.25);
+  font-style: italic;
+  margin: 0 0 1.5rem 0;
+  padding: 0.375rem 0 0.375rem 1.5rem;
+  max-height: 5.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#blog-title {
+  margin-bottom: 0.2rem;
+  margin-left: 1.3rem;
+}
+
 html {
   width: 100%;
   height: 100%
@@ -299,30 +314,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none
 }
 
-h1.major, h2.major, h3.major {
-  position: relative
-}
-
-h1.major:after, h2.major:after, h3.major:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 3.5rem;
-  height: .1rem;
-  background-color: rgba(255, 255, 255, .25)
-}
-
 h1 {
   font-size: 3rem;
   line-height: 1.2
-}
-
-h1.major {
-  margin: 0 0 2.625rem 0
-}
-
-h1.major:after {
-  bottom: -1.325rem
 }
 
 h2 {
@@ -330,24 +324,8 @@ h2 {
   line-height: 1.2
 }
 
-h2.major {
-  margin: 0 0 1.9875rem 0
-}
-
-h2.major:after {
-  bottom: -1.2rem
-}
-
 h3 {
   font-size: 1.325rem
-}
-
-h3.major {
-  margin: 0 0 1.875rem 0
-}
-
-h3.major:after {
-  bottom: -.75rem
 }
 
 h4 {
@@ -384,37 +362,13 @@ h6 {
     line-height: 1.2
   }
 
-  h1.major {
-    margin: 0 0 2.625rem 0
-  }
-
-  h1.major:after {
-    bottom: -1.325rem
-  }
-
   h2 {
     font-size: 1.5rem;
     line-height: 1.2
   }
 
-  h2.major {
-    margin: 0 0 1.9875rem 0
-  }
-
-  h2.major:after {
-    bottom: -1.2rem
-  }
-
   h3 {
     font-size: 1rem
-  }
-
-  h3.major {
-    margin: 0 0 1.875rem 0
-  }
-
-  h3.major:after {
-    bottom: -.75rem
   }
 
   h4 {
@@ -1030,7 +984,7 @@ ul.contact-icons>li a {
   transition: background-color .2s ease-in-out, box-shadow .2s ease-in-out, color .2s ease-in-out;
   background-color: #1a293c;
   border: 0;
-  border-radius: .25rem;
+  border-radius: .5rem;
   color: #7db5d2 !important;
   cursor: pointer;
   display: inline-block;
@@ -1157,6 +1111,7 @@ ul.contact-icons>li a {
   -ms-align-items: -ms-stretch;
   align-items: stretch;
   height: 100%;
+  border-radius: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
   margin-right: 1rem;
@@ -1630,9 +1585,7 @@ ul.contact-icons>li a {
   }
 
   .panel>.intro {
-    padding: 2.8875rem 1.75rem 1.3875rem 1.75rem;
     width: 100% !important;
-    height: 500px auto;
     align-items: center
   }
 
@@ -2294,9 +2247,9 @@ body.is-preload #wrapper {
 }
 
 .roadmap_list {
-  font-size: 12px;
-  margin: 1rem;
-  line-height: 160%
+  font-size: 14px;
+  margin: 0.6rem;
+  line-height: 160%;
 }
 
 .roadmap_list>a>li:hover {
@@ -2315,7 +2268,7 @@ label {
 .da-member {
   background: #1a293c;
   color: #7db5d2;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 2rem
 }
 
@@ -2363,9 +2316,10 @@ label {
 }
 
 .da-pic {
-  padding-top: 10px;
-  padding-bottom: 15px;
-  opacity: 1 !important
+  margin-top: 10px;
+  margin-bottom: 15px;
+  opacity: 1 !important;
+  border-radius: 0.5rem !important;
 }
 
 #overlayContactUs, #overlayMist, #overlayRaindrop, #overlayDocs, #overlayTutorial, #overlaySnippets {
@@ -2374,7 +2328,6 @@ label {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .79);
@@ -2622,12 +2575,12 @@ img:hover {
   margin-top: 3rem;
   display: inline-block;
   padding: 1rem 0 0 5rem;
-  border-radius: 1rem
+  border-radius: 1rem !important;
 }
 
 .Languages .Languages-btns {
   background-color: #1f354d !important;
-  border-radius: 1rem
+  border-radius: 0.5rem !important;
 }
 
 .Languages .Language-select {
@@ -2696,10 +2649,11 @@ a:hover {
   display: flex;
   flex-direction: column !important;
   text-align: center;
-  margin-top: 21rem;
+  margin-top: 23rem;
 }
 
 .link-column>a {
+  padding-right: 2rem;
   cursor: pointer;
   font-weight: bold !important;
   font-size: 16px;
@@ -2761,6 +2715,10 @@ a:hover {
   opacity: 1 !important;
 }
 
+#ecosystem-pic {
+  opacity: 1 !important;
+}
+
 #overlay-mist {
   cursor: pointer;
 }
@@ -2773,9 +2731,53 @@ a:hover {
   padding-top: 2.5rem;
 }
 
+#partner-structure>.partner_column>h3 {
+  font-size: 15px !important;
+  padding-left: 3rem !important;
+  padding-bottom: 0.6rem;
+}
+
+/* Mobile Fixes */
 @media screen and (max-width:736px) {
+  #ecosystem-pic {
+    height: 300px;
+  }
+
+  .panel {
+    border-radius: 0rem;
+  }
+
+  #partner-structure>.partner_column>h3 {
+    font-size: 16px !important;
+    padding-left: 0rem !important;
+  }
+
+  #exchange-column-2 {
+    margin-top: 2rem !important;
+  }
+
+  #exchanges-partner-structure {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  #partner-structure {
+    margin-top: -3rem;
+  }
+
+  #footer-structure {
+    margin-top: -3rem;
+  }
+
   .link-column {
     margin-top: 0rem !important;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .link-column>a {
+    padding: 0rem;
+    padding-right: 0rem;
   }
 
   .contact-icons {
@@ -2826,5 +2828,80 @@ a:hover {
 
   .Languages {
     padding: .8875rem 1.75rem 1.3875rem 1.75rem
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  #page-wrapper {
+    background: white !important;
+  }
+
+  .Languages .Languages-btns {
+    background-color: #ebebeb !important;
+    color: #5d5c5c !important;
+  }
+
+  .panel {
+    background-color: #ebebeb !important;
+  }
+
+  .panel.banner .content {
+    background: #ebebeb !important;
+  }
+
+  a, b, body, center, div, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, p, q, s, section, span, ul {
+    color: #5d5c5c !important;
+  }
+
+  .button, button, input[type=button], input[type=reset], input[type=submit] {
+    background-color: #c8c8c8 !important;
+    color: #5d5c5c !important;
+  }
+
+  .da-member {
+    background-color: #c8c8c8 !important;
+  }
+
+  .transparent-icon:before {
+    color: #5d5c5c !important;
+  }
+
+  .exchange-pic {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    opacity: 0.7;
+  }
+
+  .protocol-pic {
+    display: none;
+  }
+
+  #protocol_title, a {
+    margin-left: 1rem;
+  }
+
+  #overlayContactUsText {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
+  }
+
+  label.fcf-label {
+    color: #5d5c5c !important;
+  }
+
+  textarea.fcf-form-control {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
+    border: 1px solid #fff !important;
+  }
+
+  .button-contact-us {
+    background: #c8c8c8 !important;
+  }
+
+  #text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
+    background: #ebebeb !important;
+    color: #5d5c5c !important;
   }
 }

@@ -44,19 +44,11 @@ description: meta.description
 
       <section class="panel">
         <div class="intro joined">
-          <h2 class="major">{% t ecosystem_title %}</h2>
+          <h2>{% t ecosystem_title %}</h2>
           <p>{% t ecosystem_subline %}</p>
         </div>
         <div class="inner" id="first">
-          <ul class="grid-icons three connected">
-            <li><a id="hydro-2fa"><span class="icon solid fas fa-fingerprint"><span class="label">Hydro 2FA</span></span></a></li>
-            <li><a id="hydro-id"><span class="icon fas fa-id-card"><span class="label">Hydro ID</span></span></a></li>
-          </ul>
-          <ul class="grid-icons three connected">
-            <li><a id="hydro-payments"><span class="icon far fa-credit-card"><span class="label">Hydro Payments</span></span></a></li>
-            <li><a id="hydro-ai"><span class="icon solid fas fa-brain"><span class="label">Hydro AI</span></span></a></li>
-            <li><a id="hydro-docs"><span class="icon far fa-file-alt"><span class="label">Hydro Docs</span></span></a></li>
-          </ul>
+          <img id="ecosystem-pic" src="assets/images/layers.png"/>
         </div>
       </section>
 
@@ -65,7 +57,7 @@ description: meta.description
       <section class="panel">
         <div class="inner columns aligned" id="protocol-center">
           <div class="intro">
-            <h2 class="major">{% t protocol_title %}</h2>
+            <h2>{% t protocol_title %}</h2>
             <p>{% t protocol_subline %}</p>
           </div>
 
@@ -130,7 +122,7 @@ description: meta.description
 
       <section class="panel">
         <div class="intro">
-          <h2 class="major">{% t team_title %}</h2>
+          <h2>{% t team_title %}</h2>
           <p>{% t team_subline %}</p>
           <div class="fcf-form-group">
             <button onclick="overlayContactUs()">{% t team_contact %}</button>
@@ -509,7 +501,7 @@ description: meta.description
 
       <section class="panel">
         <div class="intro">
-          <h2 class="major">{% t roadmap_title %}</h2>
+          <h2>{% t roadmap_title %}</h2>
           <p>{% t roadmap_subline %}</p>
         </div>
         <div class="inner columns aligned">
@@ -524,11 +516,11 @@ description: meta.description
               <label>{% t q3_2020 %}</label>
               <ul class="roadmap_list">
                 <li>{% t product_roadmap_wallet %}</li>
-                <li>{% t product_roadmap_remittance %}</li>
+                <li>{% t product_roadmap_dappstore %}</li>
               </ul>
               <label>{% t q4_2020 %}</label>
               <ul class="roadmap_list">
-                <li>{% t product_roadmap_dappstore %}</li>
+                <li>{% t product_roadmap_remittance %}</li>
                 <li>{% t product_roadmap_voting %}</li>
                 <li>{% t product_roadmap_donation %}</li>
                 <li>{% t product_roadmap_lottery %}</li>
@@ -604,6 +596,7 @@ description: meta.description
               </ul>
               <label>{% t q4_2020 %}</label>
               <ul class="roadmap_list">
+                <li>{% t wallet_7 %}</li>
                 <li>{% t wallet_2 %}</li>
                 <li>{% t wallet_3 %}</li>
                 <li>{% t wallet_4 %}</li>
@@ -619,44 +612,42 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Remittance section -->
+          <!-- Remittance Section -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
               <div class="product_header">
                 <h3>{% t remittance_title %}</h3>
               </div>
-              <label>{% t q3_2020 %}</label>
+              <label>{% t q4_2020 %}</label>
               <ul class="roadmap_list">
                 <li>{% t remittance_1 %}</li>
                 <li>{% t remittance_2 %}</li>
               </ul>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t remittance_3 %}</li>
-              </ul>
               <label>{% t q1_2021 %}</label>
+              <ul class="roadmap_list">
+                <li>{% t remittance_5 %}</li>
+                <li>{% t remittance_3 %}</li>                
+              </ul>
+              <label>{% t q2_2021 %}</label>
               <ul class="roadmap_list">
                 <li>{% t remittance_4 %}</li>
               </ul>
             </div>
           </div>
 
-          <!-- Marketing section -->
+          <!-- Marketing Section -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
               <div class="product_header">
                 <h3>{% t marketing_title %}</h3>
               </div>
-              <label>{% t q3_2020 %}</label>
+              <label>{% t q4_2020 %}</label>
               <ul class="roadmap_list">
                 <li>{% t marketing_1 %}</li>
                 <li>{% t marketing_2 %}</li>
                 <li>{% t marketing_3 %}</li>
-              </ul>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
                 <li>{% t marketing_4 %}</li>
                 <li>{% t marketing_5 %}</li>
                 <li>{% t marketing_6 %}</li>
@@ -682,46 +673,44 @@ description: meta.description
 
       <section class="panel">
         <div class="intro">
-          <h2 class="major">{% t dappstore_title %}</h2>
-          <p>{% t dappstore_subline %}</p>
-          <br>
-          <a href="https://dapps.projecthydro.org" target="_blank" rel="noreferrer" class="button">dAppstore</a>
+          <h2><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer">{% t blog_title %}</a></h2>
+          <span id="blog-feed">{% t loading %}</span> <br>
         </div>
 
         <!-- Exchanges & Partnes -->
-        <div class="inner columns aligned">
+        <div class="inner columns aligned" id="exchanges-partner-structure">
           <div class="exchanges_column">
-            <h3>{% t exchanges_title %}</h3>
-            <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer"><img alt="bittrex" src="assets/images/exchanges/bittrex.png" /></a>
-            <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer"><img alt="coinex" src="assets/images/exchanges/coinex.png" /></a>
-            <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer"><img alt="bitforex" src="assets/images/exchanges/bitforex.png" /></a>
-            <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer"><img alt="liquid" src="assets/images/exchanges/liquid.png" /></a>
-            <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer"><img alt="bitsdaq" src="assets/images/exchanges/bitsdaq.png" /></a>
+            <h3 id="exchanges-partner-title-structure">{% t exchanges_title %}</h3>
+            <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bittrex.png" /></a>
+            <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/coinex.png" /></a>
+            <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitforex.png" /></a>
+            <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/liquid.png" /></a>
+            <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitsdaq.png" /></a>
           </div>
           <div class="exchanges_column" id="exchange-column-2">
-            <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer"><img alt="mercatox" src="assets/images/exchanges/mercatox.png" /></a>
-            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xebbdf302c940c6bfd49c6b165f457fdb324649bc" target="_blank" rel="noreferrer"><img alt="vcc" src="assets/images/exchanges/uniswap.png" /></a>
-            <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer"><img alt="bitmart" src="assets/images/exchanges/bitmart.png" /></a>
-            <a href="https://idex.market/eth/hydro" target="_blank" rel="noreferrer"><img alt="idex" src="assets/images/exchanges/idex.png" /></a>
-            <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer"><img alt="stex" src="assets/images/exchanges/stex.png" /></a>
-          </div>
-          <div class="partner_column">
-            <h3>{% t partners_title %}</h3>
-            <a href="https://chain.link/" target="_blank" rel="noreferrer"><img alt="chainlink" src="assets/images/partners/chainlink.png" /></a>
-            <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer"><img alt="sparkpoint" src="assets/images/partners/sparkpoint.png" /></a>
-            <a href="https://splinterlands.com?ref=projecthydro" target="_blank"><img alt="splinterlands" src="assets/images/partners/splinterland.png" /></a>
-          </div>
-
-          <!-- Link columns with overlay buttons-->
-
-          <div class="link-column">
-            <a onclick="overlayDocs()" target="_blank" rel="noreferrer">{% t documentation_title %}</a>
-            <a onclick="overlayTutorial()" target="_blank" rel="noreferrer">{% t tutorial_title %}</a>
-            <a onclick="overlaySnippets()" target="_blank" rel="noreferrer">{% t snippets_title %}</a>
+            <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/mercatox.png" /></a>
+            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xebbdf302c940c6bfd49c6b165f457fdb324649bc" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/uniswap.png" /></a>
+            <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitmart.png" /></a>
+            <a href="https://idex.market/eth/hydro" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/idex.png" /></a>
+            <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/stex.png" /></a>
           </div>
         </div>
+        <div class="inner columns aligned" id="partner-structure">
+          <div class="partner_column">
+            <h3>{% t partners_integration_title %}</h3>
+            <a href="https://chain.link/" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/partners/chainlink.png" /></a>
+            <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/partners/sparkpoint.png" /></a>
+            <a href="https://www.axpire.com/consumer/" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/partners/axpire.png" /></a>
+            <a href="https://splinterlands.com?ref=projecthydro" target="_blank"><img class="exchange-pic" src="assets/images/partners/splinterland.png" /></a>
+          </div>
+          <div class="inner columns aligned" id="partner-structure">
+            <div class="partner_column">
+              <h3>{% t partners_media_title %}</h3>
+              <a href="https://coinnewsextra.com/" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/partners/coinnewsextra.png" /></a>
+            </div>
+          </div>
 
-        <!-- Links overlay -->
+        <!-- Documentation overlay -->
 
         <div id="overlayDocs" onclick="closeDocs()">
           <div id="text-Docs">
@@ -730,32 +719,7 @@ description: meta.description
               <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
               <a href="pages/application.html" target="_blank" rel="noreferrer">Apply to the DA Team</a>
               <a href="pages/privacy-policy.html" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tutorial overlay -->
-
-        <div id="overlayTutorial" onclick="closeTutorial()">
-          <div id="text-tutorial">
-            <div class="broaden">
-              <a href="pages/tutorial/dappstore-best-practices.html" target="_blank" rel="noreferrer">{% t tutorial_1 %}</a>
-              <a href="pages/tutorial/test-ether.html" target="_blank" rel="noreferrer">{% t tutorial_2 %}</a>
-              <a href="pages/tutorial/test-hydro.html" target="_blank" rel="noreferrer">{% t tutorial_3 %}</a>
-              <a href="pages/tutorial/walkthrough.html" target="_blank" rel="noreferrer">{% t tutorial_4 %}</a>
-              <a href="pages/tutorial/what-is-snowflake.html" target="_blank" rel="noreferrer">{% t tutorial_5 %}</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Snippets overlay -->
-
-        <div id="overlaySnippets" onclick="closeSnippets()">
-          <div id="text-snippets">
-            <div class="broaden">
-              <a href="pages/snippets/setting-up-your-dapps-allowance.html" target="_blank" rel="noreferrer">{% t snippets_1 %}</a>
-              <a href="pages/snippets/setting-up-your-resolver.html" target="_blank" rel="noreferrer">{% t snippets_2 %}</a>
-              <a href="pages/snippets/use-material-imports.html" target="_blank" rel="noreferrer">{% t snippets_3 %}</a>
+              <a href="pages/tutorial-portal.html" target="_blank" rel="noreferrer">Tutorial Portal</a>
             </div>
           </div>
         </div>
@@ -764,7 +728,13 @@ description: meta.description
       <!-- Social media section -->
 
       <section class="panel">
-        <div class="inner columns divided">
+        <div class="intro">
+          <h2>{% t dappstore_title %}</h2>
+          <p>{% t dappstore_subline %}</p><br>
+          <a href="https://dapps.projecthydro.org" target="_blank" rel="noreferrer" class="button">dAppstore</a><br>
+          <a onclick="overlayDocs()" class="button">{% t documentation_title %}</a>
+        </div>
+        <div class="inner columns divided" id="footer-structure">
           <div class="span-1-2">
             <ul class="contact-icons">
               <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'" target="_blank" rel="noreferrer"></li>

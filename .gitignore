@@ -1,3 +1,5 @@
 _site/
 .jekyll-cache/
 setup.md
+.DS_Store
+_site.zip
