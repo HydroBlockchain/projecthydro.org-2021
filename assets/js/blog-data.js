@@ -18,7 +18,7 @@ $(document)
             .split('.')[0]
 
           $('#blog-feed')
-            .append(`<h5><a href="${article.url}">${article.title}</a></h5><blockquote>${txt}</blockquote>`);
+            .append(`<h5 id="blog-title"><a href="${article.url}">${article.title}</a></h5><blockquote>${txt}</blockquote>`);
         }
       }
     })
