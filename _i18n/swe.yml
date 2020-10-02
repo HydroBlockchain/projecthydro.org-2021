@@ -110,6 +110,7 @@ wallet_3: Hydro Lån
 wallet_4: Köp och sälj med fiat
 wallet_5: Anonyma transaktioner
 wallet_6: Mist Integreras
+wallet_7: Beta version
 
 # Remittance
 remittance_title: Remittance
@@ -117,6 +118,7 @@ remittance_1: Alpha Version
 remittance_2: Live i Europa
 remittance_3: Live i Asien
 remittance_4: Live på andra kontinenter
+remittance_5: Beta version
 
 # Marketing
 marketing_title: Marketing
@@ -133,6 +135,10 @@ marketing_10: Writing contest
 marketing_11: Social Media Ads
 marketing_12: Mist Marketing
 
+# blog
+blog_title: Hydro Blogg
+loading: Laddar senaste artiklarna..
+
 # Snowflake dappstore
 dappstore_title: Snowflake dAppstore
 dappstore_subline: Upptäck Projekt Hydros dAppstore och testa lite dApps!
@@ -141,7 +147,8 @@ dappstore_subline: Upptäck Projekt Hydros dAppstore och testa lite dApps!
 exchanges_title: Exchanges
 
 # Partners
-partners_title: Partners
+partners_media_title: Media Partners
+partners_integration_title: Integration Partners
 
 # Hydro documentation
 documentation_title: Hydro Dokumentation

@@ -76,7 +76,7 @@ q1_2021: Q1 2021
 q2_2021: Q2 2021
 
 # Products
-product_title: Product
+product_title: Products
 product_roadmap_wallet: Hydro Wallet (Alpha)
 product_roadmap_remittance: Remittance (Alpha)
 product_roadmap_dappstore: Hydro dAppstore relaunch
@@ -93,7 +93,7 @@ product_roadmap_dex: Hydro DEX
 product_roadmap_mist: Mist Integration
 
 # Protocol
-protocol_title: Protocol
+protocol_title: Protocols
 protocol_roadmap_snowflake_update: Update snowflake to Solidity 0.7.0
 protocol_roadmap_raindrop_update: Update Raindrop to Solidity 0.7.0
 protocol_roadmap_tide_update: Update Tide to Solidity 0.7.0
@@ -107,20 +107,22 @@ text_mist_overlay: Mist Whitepaper to be announced!
 text_solidity_update: Raindrop will be updated to the latest version of solidity.
 
 # Wallet
-wallet_title: Wallet
+wallet_title: Wallet Updates
 wallet_1: Alpha version
 wallet_2: Hydro Staking
 wallet_3: Hydro Loans
 wallet_4: Buying & selling with fiat
 wallet_5: Anonymous Transactions
 wallet_6: Mist Integration
+wallet_7: Beta version
 
 # Remittance
-remittance_title: Remittance
+remittance_title: Remittance Updates
 remittance_1: Alpha Version
 remittance_2: Live in Europe
 remittance_3: Live in Asia
 remittance_4: Live on other continents
+remittance_5: Beta version
 
 # Marketing
 marketing_title: Marketing
@@ -136,6 +138,10 @@ marketing_9: Community-focused marketing
 marketing_10: Writing contest
 marketing_11: Social Media Ads
 marketing_12: Mist Marketing
+
+# blog
+blog_title: Hydro Blog
+loading: Loading latest articles..
 
 # Snowflake dappstore
 dappstore_title: Snowflake dAppstore
