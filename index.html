@@ -674,10 +674,15 @@ description: meta.description
 
       <section class="panel">
         <div class="intro">
-          <h2>{% t dappstore_title %}</h2>
-          <p>{% t dappstore_subline %}</p>
-          <br>
-          <a href="https://dapps.projecthydro.org" target="_blank" rel="noreferrer" class="button">dAppstore</a>
+
+          <h2 style="margin-bottom:2rem;"><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer">Hydro Blog</a></h2>
+          <!-- <p>Visit project hydros official blog or any of our social media accounts to get the latest updates and interact with the Hydro Community!</p> -->
+          <span id="blog-feed">Loading latest articles..</span> <br>
+
+
+
+
+
         </div>
 
         <!-- Exchanges & Partnes -->
@@ -728,13 +733,17 @@ description: meta.description
         </div>
       </section>
 
+
+
       <!-- Social media section -->
 
       <section class="panel">
         <div class="intro">
-          <h2>Hydro Community</h2>
-          <p>Visit project hydros official blog or any of our social media accounts to get the latest updates and interact with the Hydro Community!</p>
-          <a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer" class="button">Hydro Blog</a> <br>
+          <h2>{% t dappstore_title %}</h2>
+          <p>{% t dappstore_subline %}</p>
+          <br>
+          <a href="https://dapps.projecthydro.org" target="_blank" rel="noreferrer" class="button">dAppstore</a>
+          <br>
           <a onclick="overlayDocs()" class="button">{% t documentation_title %}</a>
         </div>
         <div class="inner columns divided" id="footer-structure">
