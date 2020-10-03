@@ -17,7 +17,7 @@ gems:
 
 # Localization config
 
-languages: ["en", "swe"]
+languages: ["en", "swe", "fil"]
 
 language_names:
   en:
@@ -26,3 +26,6 @@ language_names:
   swe:
     short: swe
     full: Swedish
+  fil:
+    short: fil
+    full: Filipino
