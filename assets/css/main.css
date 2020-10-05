@@ -2716,6 +2716,8 @@ a:hover {
 }
 
 #ecosystem-pic {
+  height: 430px;
+  width: 400px;
   opacity: 1 !important;
 }
 
@@ -2741,6 +2743,7 @@ a:hover {
 @media screen and (max-width:736px) {
   #ecosystem-pic {
     height: 300px;
+    width: 270px;
   }
 
   .panel {
