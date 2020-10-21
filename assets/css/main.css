@@ -2165,7 +2165,7 @@ ul.contact-icons>li a {
   transition-delay: .25s;
   cursor: default;
   position: relative;
-  height: 32rem
+  height: 40rem
 }
 
 body.is-preload #wrapper {
@@ -2506,7 +2506,7 @@ label.fcf-label {
   width: 100%;
   min-height: 100px;
   max-height: 200px;
-  margin-bottom: -5.5rem
+  margin-bottom: -10rem !important;
 }
 
 .content {
@@ -2702,11 +2702,13 @@ a:hover {
 }
 
 #intro-structure {
-  padding: 0px !important
+  padding: 0px !important;
+  padding-bottom: 2rem;
 }
 
 #intro-center {
   margin: 2rem;
+  /* margin-top: -31rem!important; */
 }
 
 #hydro-logo {
@@ -2744,6 +2746,11 @@ a:hover {
   #ecosystem-pic {
     height: 300px;
     width: 270px;
+  }
+
+  #intro-center {
+    margin: 2rem;
+    margin-top: 2rem!important;
   }
 
   .panel {
