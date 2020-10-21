@@ -2566,16 +2566,20 @@ img:hover {
 }
 
 .Languages {
-  padding: 1.5rem 3.5rem 2rem 3.5rem;
+  /* padding: 1.5rem 3.5rem 2rem 3.5rem; */
   z-index: 999;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
   text-align: center;
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 0 0 5rem;
+  /* margin-top: 3rem; */
+  /* display: inline-block; */
+  /* padding: 1rem 0 0 5rem; */
   border-radius: 1rem !important;
+}
+
+.hideDesktop {
+  display: none;
 }
 
 .Languages .Languages-btns {
@@ -2743,6 +2747,27 @@ a:hover {
 
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
+  .hideDesktop {
+    display: inline-block;
+  }
+
+  .floating-menu {
+    display: none !important;
+  }
+
+  .Languages {
+    padding: 1.5rem 3.5rem 2rem 3.5rem;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 0 0 5rem;
+    border-radius: 1rem !important;
+  }
+
   #ecosystem-pic {
     height: 300px;
     width: 270px;
@@ -2750,7 +2775,7 @@ a:hover {
 
   #intro-center {
     margin: 2rem;
-    margin-top: 2rem!important;
+    margin-top: 2rem !important;
   }
 
   .panel {
@@ -2841,7 +2866,7 @@ a:hover {
   }
 }
 
-/* Light mode */
+/* Light mode
 @media (prefers-color-scheme: light) {
   #page-wrapper {
     background: white !important;
@@ -2914,4 +2939,26 @@ a:hover {
     background: #ebebeb !important;
     color: #5d5c5c !important;
   }
+}
+*/
+.floating-menu {
+  font-family: sans-serif;
+  background: #1f354d;
+  width: auto;
+  z-index: 1000;
+  position: fixed;
+  margin-bottom: 45rem;
+  margin-left: 5rem;
+  padding: 0.1rem;
+  display: flex;
+  border-radius: 10px;
+  justify-content: row;
+  align-items: center;
+}
+
+.floating-menu a,
+.floating-menu h3 {
+  font-size: 0.9em;
+  display: block;
+  margin: 0 0.7em;
 }

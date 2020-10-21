@@ -15,10 +15,21 @@ description: meta.description
 <!-- Initial panel -->
 
 <body class="is-preload">
+
+  <nav class="floating-menu">
+    {% include language_selector_navbar_item.html %}
+    <a href="#protocol-structure">Protocols</a>
+    <a href="#team-structure">dAmbassadors</a>
+    <a href="#blog-feed">Blog</a>
+    <a href="#footer-structure">dApps</a>
+  </nav>
+
   <div id="page-wrapper">
+    <div class="hideDesktop">
+      {% include language_selector_navbar_item.html %}
+    </div>
 
     <div id="wrapper">
-      {% include language_selector_navbar_item.html %}
       <section class="panel banner left">
         <div class="content span-3-75" id="intro-structure">
           <div class="center-everything" id="intro-center">
