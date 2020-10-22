@@ -2749,20 +2749,19 @@ a:hover {
 .da-team-outer {
   width: auto;
   display: flex;
-  flex-direction: row!important;
+  flex-direction: row !important;
   padding-top: 1rem;
 }
 
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
-
-  .da-pic{
+  .da-pic {
     width: 150px;
     height: 150px;
   }
 
-  .da-name, .da-position{
-    font-size: 14px!important;
+  .da-name, .da-position {
+    font-size: 14px !important;
   }
 
   .button-da {
@@ -2785,13 +2784,12 @@ a:hover {
     height: auto;
     justify-content: center;
     text-align: center;
-
   }
 
   .da-team-outer {
     align-items: center;
     display: flex;
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
 
   .hideDesktop {
