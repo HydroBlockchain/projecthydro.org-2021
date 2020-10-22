@@ -18,9 +18,8 @@ description: meta.description
 
   <nav class="floating-menu">
     {% include language_selector_navbar_item.html %}
-    <a href="#protocol-structure">Protocols</a>
-    <a href="#team-structure">dAmbassadors</a>
-    <a href="#blog-feed">Blog</a>
+    <a href="#protocol-focus">Protocols</a>
+    <a href="#focus-team">dAmbassadors</a>
     <a href="#footer-structure">dApps</a>
   </nav>
 
@@ -61,13 +60,13 @@ description: meta.description
           <p>{% t ecosystem_subline %}</p>
         </div>
         <div class="inner" id="first">
-          <img id="ecosystem-pic" src="assets/images/layers.png"/>
+          <img id="ecosystem-pic" src="assets/images/layers.png" />
         </div>
       </section>
 
       <!-- Protocol section -->
 
-      <section class="panel">
+      <section class="panel" id="protocol-focus">
         <div class="inner columns aligned" id="protocol-center">
           <div class="intro">
             <h2>{% t protocol_title %}</h2>
@@ -182,332 +181,209 @@ description: meta.description
 
         <!-- Team section -->
 
-        <div class="inner columns aligned" id="team-structure">
-          <div class="da-team">
-            <div class="center-everything">
+        <div class="da-team-outer">
 
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="saurav_kumar" src="assets/images/da-team/saurav_kumar.jpg" />
-                  <p class="da-name">Saurav Kumar</p>
-                  <p class="da-position">{% t team_saurav %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Sauravk12448765?s=09"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saurav-kumar-77b60776/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
+          <div class="da-team-column" style="width: auto;justify-content:column!important;">
+            <div class="da-member">
+              <img class="da-pic" alt="saurav_kumar" src="assets/images/da-team/saurav_kumar.jpg" />
+              <p class="da-name">Saurav Kumar</p>
+              <p class="da-position">{% t team_saurav %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Sauravk12448765?s=09"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saurav-kumar-77b60776/"><i class="fab fa-linkedin"></i></a>
               </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl_ulvinen.jpg" />
-                  <p class="da-name">Carl Ulvinen</p>
-                  <p class="da-position">{% t team_carl %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carl-ulvinen-5b654428"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl_ulvinen.jpg" />
+              <p class="da-name">Carl Ulvinen</p>
+              <p class="da-position">{% t team_carl %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carl-ulvinen-5b654428"><i class="fab fa-linkedin"></i></a>
               </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="alex_milenkovic" src="assets/images/da-team/alexander_milenkovic.jpg" />
-                  <p class="da-name">Alex Milenkovic</p>
-                  <p class="da-position">{% t team_alexander %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/alexander-milenkovic-5b4706131/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="srinivas_ratnam" src="assets/images/da-team/srinivas_ratnam.jpg" />
-                  <p class="da-name">Srinivas Ratnam</p>
-                  <p class="da-position">{% t team_srinivas %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="rai_masamune" src="assets/images/da-team/rai_masamune.jpg" />
-                  <p class="da-name">Ryan Cañeba Peña</p>
-                  <p class="da-position">{% t team_rai %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryanpena-13015215a/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="olufemi_steven" src="assets/images/da-team/olufemi_steven.jpg" />
-                  <p class="da-name">Olufemi Stephen</p>
-                  <p class="da-position">{% t team_stephen %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/olufemi-stephen-46b685173"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="ana_maria" src="assets/images/da-team/ana_maria.jpg" />
-                  <p class="da-name">Ana Maria</p>
-                  <p class="da-position">{% t team_ana %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/annajt_19"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ana-maria-marin-b042a5ab/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.jpg" />
-                  <p class="da-name">Jignesh Beladiya</p>
-                  <p class="da-position">{% t team_jignesh %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="njoku_emmanuel" src="assets/images/da-team/njoku.jpg" />
-                  <p class="da-name">Njoku Emmanuel</p>
-                  <p class="da-position">{% t team_njoku %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/njokuScript"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Khay-EMMA"><i class="fab fa-github"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="devis_maxhari" src="assets/images/da-team/devis_maxhari.jpg" />
-                  <p class="da-name">Devis Maxhari</p>
-                  <p class="da-position">{% t team_devis %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/davidcryptoath?s=09"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/freeman717"><i class="fab fa-github"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="naveen_gabriel" src="assets/images/da-team/naveen.jpg" />
-                  <p class="da-name">Naveen Gabriel</p>
-                  <p class="da-position">{% t team_naveen %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naveen-gabriel/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="mathew_george" src="assets/images/da-team/mathew.jpg" />
-                  <p class="da-name">Mathew George</p>
-                  <p class="da-position">{% t team_mathew %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mathew-george-a54111105/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="phi_quang" src="assets/images/da-team/phi_quang.jpg" />
-                  <p class="da-name">Phi Quang</p>
-                  <p class="da-position">{% t team_phi %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/phi04436175"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="dell_o" src="assets/images/da-team/dell.jpg" />
-                  <p class="da-name">Dell O</p>
-                  <p class="da-position">{% t team_dell %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dell-o-8324b6131"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="priyanka_lath" src="assets/images/da-team/priyanka.jpg" />
-                  <p class="da-name">Priyanka Lath</p>
-                  <p class="da-position">{% t team_pri %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Priyanka_205?s=03"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/priyanka-lath-8ab180191/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="aljhon_manticahon" src="assets/images/da-team/aljhon.jpg" />
-                  <p class="da-name">AIjhon Manticahon</p>
-                  <p class="da-position">{% t team_aijhon %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="folorunsho_ikotun" src="assets/images/da-team/folo.jpg" />
-                  <p class="da-name">Folorunsho Ikotun</p>
-                  <p class="da-position">{% t team_folo %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Folorun91765898"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/folorunsho-ikotun-a0a3bab4/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="ayushya_chitransh" src="assets/images/da-team/ayushya.jpg" />
-                  <p class="da-name">Ayushya Chitransh</p>
-                  <p class="da-position">{% t team_ayu %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ayushya-chitransh/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="sam_ayorinde" src="assets/images/da-team/sam.jpg" />
-                  <p class="da-name">Sam Ayorinde</p>
-                  <p class="da-position">{% t team_sam %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Sam-Devs"><i class="fab fa-github"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sam-ayorinde-3b1b9a151/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="da-member">
-                <div class="center-everything">
-                  <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.jpg" />
-                  <p class="da-name">Marlo Villaos</p>
-                  <p class="da-position">{% t team_marlo %}</p>
-                  <div class="da-buttons">
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY"><i class="fab fa-twitter"></i></a>
-                    <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marlo-villaos-8330051b7/"><i class="fab fa-linkedin"></i></a>
-                  </div>
-                  <div class="button-row">
-                    <button onclick="plusDivs(-1)" class="next-button">&#10094;</button>
-                    <button onclick="plusDivs(1)" class="next-button">&#10095;</button>
-                  </div>
-                </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="srinivas_ratnam" src="assets/images/da-team/srinivas_ratnam.jpg" />
+              <p class="da-name">Srinivas Ratnam</p>
+              <p class="da-position">{% t team_srinivas %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="da-team-column">
+            <div class="da-member">
+              <img class="da-pic" alt="alex_milenkovic" src="assets/images/da-team/alexander_milenkovic.jpg" />
+              <p class="da-name">Alex Milenkovic</p>
+              <p class="da-position">{% t team_alexander %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/alexander-milenkovic-5b4706131/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="olufemi_steven" src="assets/images/da-team/olufemi_steven.jpg" />
+              <p class="da-name">Olufemi Stephen</p>
+              <p class="da-position">{% t team_stephen %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/olufemi-stephen-46b685173"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="rai_masamune" src="assets/images/da-team/rai_masamune.jpg" />
+              <p class="da-name">Ryan Cañeba Peña</p>
+              <p class="da-position">{% t team_rai %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryanpena-13015215a/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column">
+            <div class="da-member">
+              <img class="da-pic" alt="ana_maria" src="assets/images/da-team/ana_maria.jpg" />
+              <p class="da-name">Ana Maria</p>
+              <p class="da-position">{% t team_ana %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/annajt_19"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ana-maria-marin-b042a5ab/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.jpg" />
+              <p class="da-name">Jignesh Beladiya</p>
+              <p class="da-position">{% t team_jignesh %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="njoku_emmanuel" src="assets/images/da-team/njoku.jpg" />
+              <p class="da-name">Njoku Emmanuel</p>
+              <p class="da-position">{% t team_njoku %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/njokuScript"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Khay-EMMA"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column">
+            <div class="da-member">
+              <img class="da-pic" alt="naveen_gabriel" src="assets/images/da-team/naveen.jpg" />
+              <p class="da-name">Naveen Gabriel</p>
+              <p class="da-position">{% t team_naveen %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naveen-gabriel/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="mathew_george" src="assets/images/da-team/mathew.jpg" />
+              <p class="da-name">Mathew George</p>
+              <p class="da-position">{% t team_mathew %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mathew-george-a54111105/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="devis_maxhari" src="assets/images/da-team/devis_maxhari.jpg" />
+              <p class="da-name">Devis Maxhari</p>
+              <p class="da-position">{% t team_devis %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/davidcryptoath?s=09"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/freeman717"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column">
+            <div class="da-member">
+              <img class="da-pic" alt="phi_quang" src="assets/images/da-team/phi_quang.jpg" />
+              <p class="da-name">Phi Quang</p>
+              <p class="da-position">{% t team_phi %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/phi04436175"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="dell_o" src="assets/images/da-team/dell.jpg" />
+              <p class="da-name">Dell O</p>
+              <p class="da-position">{% t team_dell %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dell-o-8324b6131"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="priyanka_lath" src="assets/images/da-team/priyanka.jpg" />
+              <p class="da-name">Priyanka Lath</p>
+              <p class="da-position">{% t team_pri %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Priyanka_205?s=03"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/priyanka-lath-8ab180191/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column">
+            <div class="da-member">
+              <img class="da-pic" alt="folorunsho_ikotun" src="assets/images/da-team/folo.jpg" />
+              <p class="da-name">Folorunsho Ikotun</p>
+              <p class="da-position">{% t team_folo %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Folorun91765898"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/folorunsho-ikotun-a0a3bab4/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="ayushya_chitransh" src="assets/images/da-team/ayushya.jpg" />
+              <p class="da-name">Ayushya Chitransh</p>
+              <p class="da-position">{% t team_ayu %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ayushya-chitransh/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="aljhon_manticahon" src="assets/images/da-team/aljhon.jpg" />
+              <p class="da-name">AIjhon Manticahon</p>
+              <p class="da-position">{% t team_aijhon %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column" id="focus-team">
+            <div class="da-member">
+              <img class="da-pic" alt="sam_ayorinde" src="assets/images/da-team/sam.jpg" />
+              <p class="da-name">Sam Ayorinde</p>
+              <p class="da-position">{% t team_sam %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Sam-Devs"><i class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sam-ayorinde-3b1b9a151/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.jpg" />
+              <p class="da-name">Marlo Villaos</p>
+              <p class="da-position">{% t team_marlo %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY"><i class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marlo-villaos-8330051b7/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
       </section>
 
       <!-- Discover roadmap panel -->
@@ -732,19 +608,19 @@ description: meta.description
             </div>
           </div> -->
 
-        <!-- Documentation overlay -->
+          <!-- Documentation overlay -->
 
-        <div id="overlayDocs" onclick="closeDocs()">
-          <div id="text-Docs">
-            <div class="broaden">
-              <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros Github</a>
-              <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
-              <a href="pages/application.html" target="_blank" rel="noreferrer">Apply to the DA Team</a>
-              <a href="pages/privacy-policy.html" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
-              <a href="pages/tutorial-portal.html" target="_blank" rel="noreferrer">Tutorial Portal</a>
+          <div id="overlayDocs" onclick="closeDocs()">
+            <div id="text-Docs">
+              <div class="broaden">
+                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros Github</a>
+                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
+                <a href="pages/application.html" target="_blank" rel="noreferrer">Apply to the DA Team</a>
+                <a href="pages/privacy-policy.html" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
+                <a href="pages/tutorial-portal.html" target="_blank" rel="noreferrer">Tutorial Portal</a>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- Social media section -->

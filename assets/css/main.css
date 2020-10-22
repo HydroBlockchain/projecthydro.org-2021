@@ -2269,7 +2269,9 @@ label {
   background: #1a293c;
   color: #7db5d2;
   border-radius: 0.5rem;
-  padding: 2rem
+  padding: 0.5rem;
+  margin: 1rem;
+  height: 180px;
 }
 
 .center-everything {
@@ -2292,32 +2294,33 @@ label {
 
 .da-buttons {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .button-da {
   border-bottom: none;
   background: 0 0;
   color: #7db5d2;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px
+  padding-left: 10px;
 }
 
 .da-name {
   margin-bottom: 0;
-  font-size: 14px
+  font-weight: bold;
+  font-size: 12px
 }
 
 .da-position {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 12px
+  font-size: 10px
 }
 
 .da-pic {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  height: 100px;
+  width: 100px;
+  margin: 0.1rem;
   opacity: 1 !important;
   border-radius: 0.5rem !important;
 }
@@ -2588,7 +2591,6 @@ img:hover {
 }
 
 .Languages .Language-select {
-  height: 3em;
   background: 0 0;
   border-radius: .25em;
   max-width: 6rem
@@ -2600,7 +2602,6 @@ img:hover {
 }
 
 .Languages .Languages-btns {
-  color: rgba(255, 255, 255, .875);
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 0;
@@ -2745,8 +2746,54 @@ a:hover {
   padding-bottom: 0.6rem;
 }
 
+.da-team-outer {
+  width: auto;
+  display: flex;
+  flex-direction: row!important;
+  padding-top: 1rem;
+}
+
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
+
+  .da-pic{
+    width: 150px;
+    height: 150px;
+  }
+
+  .da-name, .da-position{
+    font-size: 14px!important;
+  }
+
+  .button-da {
+    padding-left: 0px;
+  }
+
+  .da-buttons {
+    padding-top: 1rem;
+    justify-content: space-between;
+  }
+
+  .da-member {
+    background: #1a293c;
+    color: #7db5d2;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 1rem;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .da-team-outer {
+    align-items: center;
+    display: flex;
+    flex-direction: column!important;
+  }
+
   .hideDesktop {
     display: inline-block;
   }
@@ -2942,7 +2989,6 @@ a:hover {
 }
 */
 .floating-menu {
-  font-family: sans-serif;
   background: #1f354d;
   width: auto;
   z-index: 1000;
