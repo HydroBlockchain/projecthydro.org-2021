@@ -2270,7 +2270,7 @@ label {
   color: #7db5d2;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
   height: 180px;
 }
 
@@ -2750,7 +2750,7 @@ a:hover {
   width: auto;
   display: flex;
   flex-direction: row !important;
-  padding-top: 1rem;
+  margin: 1rem;
 }
 
 /* Mobile Fixes */
