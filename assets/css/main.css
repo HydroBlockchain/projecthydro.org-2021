@@ -2325,7 +2325,7 @@ label {
   border-radius: 0.5rem !important;
 }
 
-#overlayContactUs, #overlayMist, #overlayRaindrop, #overlayDocs, #overlayTutorial, #overlaySnippets {
+#overlayContactUs, #overlayMist, #overlayRaindrop, #overlayDocs {
   position: fixed;
   display: none;
   width: 100%;
@@ -2338,7 +2338,7 @@ label {
   cursor: pointer
 }
 
-#text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
+#text-mist, #text-raindrop, #text-Docs{
   background: #1a293c !important;
   color: #7db5d2 !important;
   padding: 1rem;
@@ -2349,6 +2349,15 @@ label {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   border-radius: 10px
+}
+
+.wrapper-privacy{
+  height: 50rem auto!important;
+  width: 100rem auto!important;
+
+}
+.privacy-step{
+  height:50px;
 }
 
 #overlayContactUsText {

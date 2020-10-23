@@ -29,7 +29,7 @@ function closeContactUs() {
   document.getElementById("overlayContactUs").style.display = "none";
 }
 
-// Docs Policy overlay
+// Docs overlay
 
 function overlayDocs() {
   document.getElementById("overlayDocs").style.display = "block";
@@ -37,24 +37,4 @@ function overlayDocs() {
 
 function closeDocs() {
   document.getElementById("overlayDocs").style.display = "none";
-}
-
-// tutorial Policy overlay
-
-function overlayTutorial() {
-  document.getElementById("overlayTutorial").style.display = "block";
-}
-
-function closeTutorial() {
-  document.getElementById("overlayTutorial").style.display = "none";
-}
-
-// Snippets overlay
-
-function overlaySnippets() {
-  document.getElementById("overlaySnippets").style.display = "block";
-}
-
-function closeSnippets() {
-  document.getElementById("overlaySnippets").style.display = "none";
 }
