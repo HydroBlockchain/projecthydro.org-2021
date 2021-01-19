@@ -1002,7 +1002,7 @@ ul.contact-icons>li a {
 }
 
 .button:hover, button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
-  background: #0b1a2e;
+  background: #212121;
   color: #fff !important
 }
 
@@ -2342,7 +2342,7 @@ label {
 
 #text-mist, #text-raindrop, #text-Docs{
   background: #131313 !important;
-  color: #7db5d2 !important;
+  color: #fff !important;
   padding: 1rem;
   position: absolute;
   top: 40%;
@@ -2364,7 +2364,7 @@ label {
 
 #overlayContactUsText {
   background: #131313 !important;
-  color: #7db5d2 !important;
+  color: #fff !important;
   padding: 1rem;
   position: absolute;
   top: 50%;
@@ -2409,7 +2409,7 @@ label {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #00324e;
+  color: #000;
   background-color: #7db5d2;
   background-clip: padding-box;
   border: 1px solid #00324e;
@@ -2424,7 +2424,7 @@ label {
 
 textarea.fcf-form-control {
   font-family: 'Roboto', sans-serif;
-  background: #6f87a3;
+  background: #a9a9a9;
   height: 100%;
   width: 250px
 }
@@ -2460,7 +2460,6 @@ textarea {
 label.fcf-label {
   display: inline-block;
   margin-bottom: .5rem;
-  color: #7db5d2 !important
 }
 
 .fcf-credit {
@@ -2482,7 +2481,7 @@ label.fcf-label {
 .fcf-btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #777777;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2645,7 +2644,7 @@ a:hover {
 }
 
 .button-contact-us {
-  background: #08182d !important;
+  background: #2e2e2e !important;
   margin: .5rem
 }
 
