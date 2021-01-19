@@ -3009,6 +3009,7 @@ a:hover {
   border-radius: 10px;
   justify-content: row;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .floating-menu a,
