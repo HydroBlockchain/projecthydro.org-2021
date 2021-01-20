@@ -7,7 +7,7 @@ hydro_is: Hydro är ett decentraliserat ekosystem som använder sig utav modern 
 
 # ecosystem section
 ecosystem_title: Ekosystem
-ecosystem_subline: Ett sammanvävt smart kontrakts baserad säkerthets svit.
+ecosystem_subline: Multichain protokoll som säkrar upp web3 lagret.
 
 #protocol section
 protocol_title: Protokoll
@@ -53,6 +53,9 @@ team_folo: Affärs Utvecklare
 team_ayu: Solidity Utvecklare
 team_sam: Solidity Utvecklare
 team_marlo: Grafisk Designer
+team_aditya: Utvecklare
+team_hanna: UI/UX Designer
+team_murphy: Produkt Chef
 
 # contact us
 contact_name: Namn

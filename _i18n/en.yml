@@ -7,7 +7,7 @@ hydro_is: Hydro is a decentralized ecosystem using cutting-edge cryptography to 
 
 # ecosystem section
 ecosystem_title: Ecosystem
-ecosystem_subline: An interconnected smart-contract based security suite.
+ecosystem_subline: Multi-chain protocols securing the web3 reality.
 
 #protocol section
 protocol_title: Protocols
@@ -57,6 +57,9 @@ team_folo: Biz dev
 team_ayu: Solidity Developer
 team_sam: Solidity Developer
 team_marlo: Graphic Designer
+team_aditya: Developer
+team_hanna: UI/UX Designer
+team_murphy: Product Manager
 
 # contact us
 contact_name: Name
