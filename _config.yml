@@ -17,15 +17,15 @@ gems:
 
 # Localization config
 
-languages: ["en", "swe", "fil"]
+languages: ["en", "sv", "fil"]
 
 language_names:
   en:
-    short: en
+    short: EN
     full: English
-  swe:
-    short: swe
-    full: Swedish
+  sv:
+    short: SV
+    full: Svenska
   fil:
-    short: fil
+    short: FIL
     full: Filipino

@@ -1,6 +1,6 @@
 <div class="Languages">
   <div class="Language-select">
-    <select class="Languages-btns" onchange="location = this.value;">
+    <select class="Languages-btns" aria-label="languages" onchange="location = this.value;">
       {% for lang in site.languages %} {% if site.lang == lang %} {% if
       site.default_lang == lang %}
       <option
