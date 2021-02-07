@@ -1113,7 +1113,7 @@ ul.contact-icons>li a {
   height: 100%;
   border-radius: 0.5rem;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   margin-right: 1rem;
   background: #171717 !important;
 }
