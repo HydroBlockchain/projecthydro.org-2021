@@ -2720,7 +2720,9 @@ a:hover {
 #intro-structure {
   padding: 0px !important;
   padding-bottom: 2rem;
+  justify-content: space-between;
 }
+
 
 #intro-center {
   margin: 2rem;
@@ -2807,7 +2809,7 @@ a:hover {
     display: inline-block;
   }
 
-  .floating-menu {
+  .menu {
     display: none !important;
   }
 
@@ -2997,24 +2999,23 @@ a:hover {
   }
 }
 */
-.floating-menu {
+.menu {
   background: #171717;
   width: auto;
-  z-index: 1000;
-  position: fixed;
-  margin-bottom: 45rem;
-  margin-left: 5rem;
-  padding: 0.1rem;
+  padding: 0.2rem;
   display: flex;
-  border-radius: 10px;
   justify-content: row;
   align-items: center;
-  margin-top: 2rem;
 }
 
-.floating-menu a,
-.floating-menu h3 {
+.menu a,
+.menu h3 {
   font-size: 0.9em;
   display: block;
   margin: 0 0.7em;
+}
+
+.small-text{
+  font-size: 9px;
+  color: transparent!important;
 }

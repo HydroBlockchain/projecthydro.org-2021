@@ -15,29 +15,26 @@ description: meta.description
 <!-- Initial panel -->
 
 <body class="is-preload">
-
-  <nav class="floating-menu">
-    {% include language_selector_navbar_item.html %}
-    <a href="#protocol-focus">Protocols</a>
-    <a href="#focus-team">dAmbassadors</a>
-    <a href="#footer-structure">dApps</a>
-  </nav>
-
   <div id="page-wrapper">
     <div class="hideDesktop">
       {% include language_selector_navbar_item.html %}
     </div>
-
     <div id="wrapper">
       <section class="panel banner left">
         <div class="content span-3-75" id="intro-structure">
+          <nav class="menu">
+            {% include language_selector_navbar_item.html %}
+            <a href="#protocol-focus">Protocols</a>
+            <a href="#focus-team">Team</a>
+            <a href="#focus-roadmap">Roadmap</a>
+            <a href="#footer-structure">dApps</a>
+          </nav>
           <div class="center-everything" id="intro-center">
             <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
             <h1><span>{% t hydro_title %}</span></h1>
             <p>{% t hydro_is %}</p>
           </div>
-
-          
+          <div class="small-text">Hydro Foundation</div>
         </div>
       </section>
 
@@ -66,7 +63,8 @@ description: meta.description
             <div class="protocol-one">
               <div class="row-flex">
                 <img alt="Raindrop" class="protocol-pic" src="assets/images/roadmap/raindrop.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer" href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Raindrop">Raindrop</a></h3>
+                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                    href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Raindrop">Raindrop</a></h3>
               </div>
               <p class="protocol-text">{% t raindrop_text %}</p>
             </div>
@@ -74,7 +72,9 @@ description: meta.description
             <div class="protocol-two">
               <div class="row-flex">
                 <img alt="Snowflake" class="protocol-pic" src="assets/images/roadmap/snowflake.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer" href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Snowflake/Snowflake_DRAFT.md">Snowflake</a></h3>
+                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                    href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Snowflake/Snowflake_DRAFT.md">Snowflake</a>
+                </h3>
               </div>
               <p class="protocol-text">{% t snowflake_text %}</p>
             </div>
@@ -84,7 +84,8 @@ description: meta.description
             <div class="protocol-one">
               <div class="row-flex">
                 <img alt="Ice" class="protocol-pic" src="assets/images/roadmap/ice.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer" href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Ice/Ice_DRAFT.md">Ice</a></h3>
+                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                    href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Ice/Ice_DRAFT.md">Ice</a></h3>
               </div>
               <p class="protocol-text">{% t ice_text %}</p>
             </div>
@@ -92,7 +93,8 @@ description: meta.description
             <div class="protocol-two">
               <div class="row-flex">
                 <img alt="Tide" class="protocol-pic" src="assets/images/roadmap/tide.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer" href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Tide">Tide</a></h3>
+                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                    href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Tide">Tide</a></h3>
               </div>
               <p class="protocol-text">{% t tide_text %}.</p>
             </div>
@@ -102,7 +104,8 @@ description: meta.description
             <div class="protocol-one">
               <div class="row-flex">
                 <img alt="Hail" class="protocol-pic" src="assets/images/roadmap/hail.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer" href="https://github.com/HydroBlockchain/Hail">Hail</a></h3>
+                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                    href="https://github.com/HydroBlockchain/Hail">Hail</a></h3>
               </div>
               <p class="protocol-text">{% t hail_text %}</p>
             </div>
@@ -135,7 +138,8 @@ description: meta.description
             <div id="overlayContactUsText">
 
               <div id="fcf-form">
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="/pages/php/contact-form-process.php">
+                <form id="fcf-form-id" class="fcf-form-class" method="post"
+                  action="/pages/php/contact-form-process.php">
 
                   <div class="fcf-form-group">
                     <label for="Name" class="fcf-label">{% t contact_name %}</label>
@@ -154,7 +158,8 @@ description: meta.description
                   <div class="fcf-form-group">
                     <label for="Message" class="fcf-label">{% t contact_message %}</label>
                     <div class="fcf-input-group">
-                      <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                      <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                        required></textarea>
                     </div>
                   </div>
 
@@ -178,8 +183,10 @@ description: meta.description
               <p class="da-name">Saurav Kumar</p>
               <p class="da-position">{% t team_saurav %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Sauravk12448765?s=09"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saurav-kumar-77b60776/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Sauravk12448765?s=09"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/saurav-kumar-77b60776/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -187,41 +194,49 @@ description: meta.description
               <p class="da-name">Srinivas Ratnam</p>
               <p class="da-position">{% t team_srinivas %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="da-team-column"  id="focus-team">
+            <div class="da-member">
+              <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl.png" />
+              <p class="da-name">Carl Ulvinen</p>
+              <p class="da-position">{% t team_carl %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/carl-ulvinen-5b654428"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="da-member">
+              <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.png" />
+              <p class="da-name">Jignesh Beladiya</p>
+              <p class="da-position">{% t team_jignesh %}</p>
+              <div class="da-buttons">
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
 
           <div class="da-team-column">
             <div class="da-member">
-              <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl.png" />
-              <p class="da-name">Carl Ulvinen</p>
-              <p class="da-position">{% t team_carl %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carl-ulvinen-5b654428"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>          
-            <div class="da-member">
-              <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.png" />
-              <p class="da-name">Jignesh Beladiya</p>
-              <p class="da-position">{% t team_jignesh %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon"><i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="da-team-column">            
-            <div class="da-member">
               <img class="da-pic" alt="olufemi_steven" src="assets/images/da-team/stephen.png" />
               <p class="da-name">Olufemi Stephen</p>
               <p class="da-position">{% t team_stephen %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/olufemi-stephen-46b685173"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/olufemi-stephen-46b685173"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -229,11 +244,13 @@ description: meta.description
               <p class="da-name">Ryan Cañeba Peña</p>
               <p class="da-position">{% t team_rai %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ryanpena-13015215a/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/ryanpena-13015215a/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
-          </div>          
+          </div>
 
           <div class="da-team-column">
             <div class="da-member">
@@ -241,8 +258,10 @@ description: meta.description
               <p class="da-name">Naveen Gabriel</p>
               <p class="da-position">{% t team_naveen %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naveen-gabriel/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/naveen-gabriel/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -250,8 +269,10 @@ description: meta.description
               <p class="da-name">Mathew George</p>
               <p class="da-position">{% t team_mathew %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mathew-george-a54111105/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/mathew-george-a54111105/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -262,8 +283,10 @@ description: meta.description
               <p class="da-name">Phi Quang</p>
               <p class="da-position">{% t team_phi %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/phi04436175"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/phi04436175"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -271,20 +294,24 @@ description: meta.description
               <p class="da-name">Dell O</p>
               <p class="da-position">{% t team_dell %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dell-o-8324b6131"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/dell-o-8324b6131"><i class="fab fa-linkedin"></i></a>
               </div>
-            </div>            
+            </div>
           </div>
 
-          <div class="da-team-column">           
+          <div class="da-team-column">
             <div class="da-member">
               <img class="da-pic" alt="ayushya_chitransh" src="assets/images/da-team/ayushya.png" />
               <p class="da-name">Ayushya Chitransh</p>
               <p class="da-position">{% t team_ayu %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ayushya-chitransh/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/ayushya-chitransh/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -292,20 +319,25 @@ description: meta.description
               <p class="da-name">AIjhon Manticahon</p>
               <p class="da-position">{% t team_aijhon %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="da-team-column" id="focus-team">            
+          <div class="da-team-column">
             <div class="da-member">
               <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.png" />
               <p class="da-name">Marlo Villaos</p>
               <p class="da-position">{% t team_marlo %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marlo-villaos-8330051b7/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/marlo-villaos-8330051b7/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -313,20 +345,24 @@ description: meta.description
               <p class="da-name">Aditya Chebrolu</p>
               <p class="da-position">{% t team_aditya %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Adityac1"><i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aditya-chebrolu-74abb9123"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/Adityac1"><i
+                    class="fab fa-github"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/aditya-chebrolu-74abb9123"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="da-team-column" id="focus-team">            
+          <div class="da-team-column" id="focus-team">
             <div class="da-member">
               <img class="da-pic" alt="hanna" src="assets/images/da-team/hanna.png" />
               <p class="da-name">Hanna Hermawan</p>
               <p class="da-position">{% t team_hanna %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/yookomoon?s=09"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hanna-hermawan-0566741b9/"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/yookomoon?s=09"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer"
+                  href="https://www.linkedin.com/in/hanna-hermawan-0566741b9/"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="da-member">
@@ -334,8 +370,10 @@ description: meta.description
               <p class="da-name">Usifo Murphy</p>
               <p class="da-position">{% t team_murphy %}</p>
               <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/druids01"><i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://linkedin.com/in/Usifo-Murphy"><i class="fab fa-linkedin"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/druids01"><i
+                    class="fab fa-twitter"></i></a>
+                <a class="button-da" target="_blank" rel="noreferrer" href="https://linkedin.com/in/Usifo-Murphy"><i
+                    class="fab fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -355,7 +393,7 @@ description: meta.description
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
-              <div class="product_header">
+              <div class="product_header" id="focus-roadmap">
                 <h3>{% t product_title %}</h3>
               </div>
               <label>{% t q3_2020 %}</label>
@@ -518,7 +556,8 @@ description: meta.description
 
       <section class="panel">
         <div class="intro" id="blog-structure" style="margin-top:-2rem; ">
-          <h3><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer" style="padding-left:1rem;">{% t blog_title %}</a></h3>
+          <h3><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer"
+              style="padding-left:1rem;">{% t blog_title %}</a></h3>
           <br>
           <span id="blog-feed">{% t loading %}</span> <br>
         </div>
@@ -527,37 +566,57 @@ description: meta.description
         <div class="inner columns aligned" id="exchanges-partner-structure">
           <div class="exchanges_column">
             <h3 id="exchanges-partner-title-structure">{% t exchanges_title %}</h3>
-            <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bittrex.png" /></a>
-            <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/coinex.png" /></a>
-            <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitforex.png" /></a>
-            <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/liquid.png" /></a>
-            <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitsdaq.png" /></a>
-            <a href="https://trade.buyucoin.com/trade/HYDRO-INR" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/buyucoin.png" /></a>
+            <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/bittrex.png" /></a>
+            <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/coinex.png" /></a>
+            <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/bitforex.png" /></a>
+            <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/liquid.png" /></a>
+            <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer"><img class="exchange-pic"
+                src="assets/images/exchanges/bitsdaq.png" /></a>
+            <a href="https://trade.buyucoin.com/trade/HYDRO-INR" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/buyucoin.png" /></a>
           </div>
           <div class="exchanges_column" id="exchange-column-2">
-            <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/mercatox.png" /></a>
-            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xebbdf302c940c6bfd49c6b165f457fdb324649bc" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/uniswap.png" /></a>
-            <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/bitmart.png" /></a>
-            <a href="https://idex.market/eth/hydro" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/idex.png" /></a>
-            <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer"><img class="exchange-pic" src="assets/images/exchanges/stex.png" /></a>
+            <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer"><img class="exchange-pic"
+                src="assets/images/exchanges/mercatox.png" /></a>
+            <a href="https://app.uniswap.org/#/swap?outputCurrency=0xebbdf302c940c6bfd49c6b165f457fdb324649bc"
+              target="_blank" rel="noreferrer"><img class="exchange-pic"
+                src="assets/images/exchanges/uniswap.png" /></a>
+            <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/bitmart.png" /></a>
+            <a href="https://idex.market/eth/hydro" target="_blank" rel="noreferrer"><img class="exchange-pic"
+                src="assets/images/exchanges/idex.png" /></a>
+            <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer"><img
+                class="exchange-pic" src="assets/images/exchanges/stex.png" /></a>
           </div>
         </div>
         <div class="inner columns aligned" id="partner-structure">
           <div class="partner_column">
             <h3>{% t partners_integration_title %}</h3>
-            <a href="https://chain.link/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/chainlink.png" /></a>
-            <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/sparkpoint.png" /></a>
-            <a href="https://tusc.network/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/tusc.png" /></a>
-            <a href="https://ethernity.live/en/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/ethernity.png" /></a>
-            <a href="" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/bloceducare.png" /></a>
-            <a href="https://www.emedchain.com/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/emedchain.png" /></a>
+            <a href="https://chain.link/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/chainlink.png" /></a>
+            <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/sparkpoint.png" /></a>
+            <a href="https://tusc.network/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/tusc.png" /></a>
+            <a href="https://ethernity.live/en/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/ethernity.png" /></a>
+            <a href="" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/bloceducare.png" /></a>
+            <a href="https://www.emedchain.com/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                src="assets/images/partners/emedchain.png" /></a>
 
           </div>
           <div class="inner columns aligned" id="partner-structure">
             <div class="partner_column">
               <h3>{% t partners_media_title %}</h3>
-              <a href="https://coinnewsextra.com/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/coinnewsextra.png" /></a>
-              <a href="https://cryptonewsnet.com/" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/coinnewsnet.png" /></a>
+              <a href="https://coinnewsextra.com/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                  src="assets/images/partners/coinnewsextra.png" /></a>
+              <a href="https://cryptonewsnet.com/" target="_blank" rel="noreferrer"><img class="partner-pic"
+                  src="assets/images/partners/coinnewsnet.png" /></a>
             </div>
           </div>
           <!-- legal section -->
@@ -573,10 +632,13 @@ description: meta.description
           <div id="overlayDocs" onclick="closeDocs()">
             <div id="text-Docs">
               <div class="broaden">
-                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros Github</a>
-                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
+                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros
+                  Github</a>
+                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our
+                  Documentation</a>
                 <!-- <a href="pages/application.html" target="_blank" rel="noreferrer">Apply to the DA Team</a> -->
-                <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
+                <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank"
+                  rel="noreferrer">{% t privacy_1 %}</a>
               </div>
             </div>
           </div>
@@ -595,16 +657,28 @@ description: meta.description
         <div class="inner columns divided" id="footer-structure">
           <div class="span-1-2">
             <ul class="contact-icons">
-              <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-twitter transparent-icon" onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-medium transparent-icon" onclick="https://medium.com/@ProjectHydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-linkedin transparent-icon" onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'"
+                target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-twitter transparent-icon"
+                onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-medium transparent-icon" onclick="https://medium.com/@ProjectHydro'"
+                target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-linkedin transparent-icon"
+                onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank"
+                rel="noreferrer"></li>
             </ul>
             <ul class="contact-icons">
-              <li class="icon brands fa-facebook transparent-icon" onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-reddit transparent-icon" onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-instagram transparent-icon" onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-youtube transparent-icon" onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-facebook transparent-icon"
+                onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank"
+                rel="noreferrer"></li>
+              <li class="icon brands fa-reddit transparent-icon"
+                onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-instagram transparent-icon"
+                onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'"
+                target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-youtube transparent-icon"
+                onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank"
+                rel="noreferrer"></li>
             </ul>
           </div>
         </div>
