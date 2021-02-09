@@ -2826,6 +2826,10 @@ a:hover {
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
 
+  #hydro-logo {
+    margin-top: 3rem!important;
+  }  
+
   .tokenomics {
     margin: 0 !important;
   }
