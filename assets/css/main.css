@@ -2766,6 +2766,27 @@ a:hover {
 
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
+
+  .blockchains{
+    display: flex;
+    flex-direction: column!important;
+  }
+
+  #blockchain-specs{
+    width: auto!important;
+    align-items: center;
+  }
+
+  .eth-specs{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .bsc-specs{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .da-pic {
     width: 125px;
     height: 125px;
@@ -2786,7 +2807,6 @@ a:hover {
 
   .da-member {
     background: #131313;
-    color: #7db5d2;
     border-radius: 0.5rem;
     padding: 2rem;
     padding-left: 4rem;
@@ -2924,81 +2944,6 @@ a:hover {
   }
 }
 
-/* Light mode
-@media (prefers-color-scheme: light) {
-  #page-wrapper {
-    background: white !important;
-  }
-
-  .Languages .Languages-btns {
-    background-color: #ebebeb !important;
-    color: #5d5c5c !important;
-  }
-
-  .panel {
-    background-color: #ebebeb !important;
-  }
-
-  .panel.banner .content {
-    background: #ebebeb !important;
-  }
-
-  a, b, body, center, div, form, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, p, q, s, section, span, ul {
-    color: #5d5c5c !important;
-  }
-
-  .button, button, input[type=button], input[type=reset], input[type=submit] {
-    background-color: #c8c8c8 !important;
-    color: #5d5c5c !important;
-  }
-
-  .da-member {
-    background-color: #c8c8c8 !important;
-  }
-
-  .transparent-icon:before {
-    color: #5d5c5c !important;
-  }
-
-  .exchange-pic {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-    opacity: 0.7;
-  }
-
-  .protocol-pic {
-    display: none;
-  }
-
-  #protocol_title, a {
-    margin-left: 1rem;
-  }
-
-  #overlayContactUsText {
-    background: #ebebeb !important;
-    color: #5d5c5c !important;
-  }
-
-  label.fcf-label {
-    color: #5d5c5c !important;
-  }
-
-  textarea.fcf-form-control {
-    background: #ebebeb !important;
-    color: #5d5c5c !important;
-    border: 1px solid #fff !important;
-  }
-
-  .button-contact-us {
-    background: #c8c8c8 !important;
-  }
-
-  #text-mist, #text-raindrop, #text-Docs, #text-tutorial, #text-snippets {
-    background: #ebebeb !important;
-    color: #5d5c5c !important;
-  }
-}
-*/
 .menu {
   background: #171717;
   width: auto;
@@ -3018,4 +2963,57 @@ a:hover {
 .small-text{
   font-size: 9px;
   color: transparent!important;
+}
+
+/* Multichains-section */
+
+#blockchain-specs{
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blockchains{
+  display: flex;
+  flex-direction: row;
+}
+
+.spec-sheet{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-sheet label{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+
+.eth-specs{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin-right: 2rem;
+}
+
+#eth-logo{
+  padding-bottom: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+.bsc-specs{
+  display: flex;
+  flex-direction: column;
+  padding:3rem;
+  margin-left: 2rem;
+}
+
+#bsc-logo{
+  padding-bottom: 0.9rem;
+  width: 100px;
+  height: auto;
 }
