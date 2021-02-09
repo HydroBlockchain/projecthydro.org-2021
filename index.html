@@ -24,10 +24,10 @@ description: meta.description
         <div class="content span-3-75" id="intro-structure">
           <nav class="menu">
             {% include language_selector_navbar_item.html %}
-            <a href="#protocol-focus">Protocols</a>
+            <!-- <a href="#protocol-focus">Protocols</a>
             <a href="#focus-team">Team</a>
             <a href="#focus-roadmap">Roadmap</a>
-            <a href="#footer-structure">dApps</a>
+            <a href="#footer-structure">dApps</a> -->
           </nav>
           <div class="center-everything" id="intro-center">
             <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
@@ -53,9 +53,25 @@ description: meta.description
       <!--- Multichains section-->
 
       <section class="panel">
-        <div class="intro joined">
-          <h2>MultiChains</h2>
-          <p>The Hydro protocols runs on top of multiple blockchains</p>
+        <div class="intro joined" id="tokenomics-section">
+          <div class="tokenomics">
+            <div class="blockchains-section">
+            <h3>Blockchains</h3>
+            The Hydro protocols are available to use on multiple networks. 
+            All of our protocols and dApps are powered by Hydro tokens.
+          </div>
+          <div class="escrow-section">
+            <h3>Escrow</h3>
+            Hydro has a total supply of 111,111,111 million which was elected by its community. 
+            The distribution between chains is handled by our escrow that swaps your tokens between chains. 
+            Once the swap from one chain to another is complete you are free to enjoy the benefits of your chosen network.
+          </div>
+          <div class="evaporation-section">
+            <h3>Evaporation</h3>
+            All of the Hydro tokens that are consumed by a Smart Contract will evaporate, 
+            hence the supply will continously decrease over time.
+          </div>
+          </div>
         </div>
         <div class="inner" id="blockchain-specs">
           <div class="blockchains">

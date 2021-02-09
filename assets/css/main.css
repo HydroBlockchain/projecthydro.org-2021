@@ -2767,6 +2767,10 @@ a:hover {
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
 
+  .tokenomics{
+    margin: 0  !important;
+  }
+
   .blockchains{
     display: flex;
     flex-direction: column!important;
@@ -2944,6 +2948,8 @@ a:hover {
   }
 }
 
+/* Menu */
+
 .menu {
   background: #171717;
   width: auto;
@@ -2966,6 +2972,30 @@ a:hover {
 }
 
 /* Multichains-section */
+
+.tokenomics{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 16px;
+  margin-right: 5rem;
+}
+
+#tokenomics-section{
+  width: 50rem;
+}
+
+.blockchains-section{
+  padding: 1rem;
+}
+
+.escrow-section{
+  padding: 1rem;
+}
+
+.evaporation-section{
+  padding: 1rem;
+}
 
 #blockchain-specs{
   width: 60rem;
