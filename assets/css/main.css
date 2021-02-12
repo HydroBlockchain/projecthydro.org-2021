@@ -2826,6 +2826,16 @@ a:hover {
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
 
+  #multichain-pic{
+    width: 250px !important;
+    height: auto !important;
+  }
+
+  .multichains{
+    padding: 1rem !important;
+    width: auto!important;
+  }
+
   #hydro-logo {
     margin-top: 3rem!important;
   }  
@@ -2844,12 +2854,7 @@ a:hover {
     align-items: center;
   }
 
-  .eth-specs {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .bsc-specs {
+  .eth-specs, .bsc-specs, .dot-specs, .ada-specs, .algo-specs {
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -3043,7 +3048,7 @@ a:hover {
 }
 
 #tokenomics-section {
-  width: 50rem;
+  width: 40rem;
 }
 
 .blockchains-section {
@@ -3059,11 +3064,11 @@ a:hover {
 }
 
 #blockchain-specs {
-  width: 60rem;
+  width: 60rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .blockchains {
@@ -3083,28 +3088,38 @@ a:hover {
   margin-bottom: 1px;
 }
 
-.eth-specs {
+.eth-specs, .bsc-specs, .dot-specs, .ada-specs, .algo-specs {
+  color: white!important;
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  margin-right: 2rem;
 }
 
-#eth-logo {
-  padding-bottom: 1rem;
+#eth-logo, #bsc-logo, #dot-logo, #ada-logo, #algo-specs {
   width: 100px;
   height: auto;
 }
 
-.bsc-specs {
+.multichains{
   display: flex;
-  flex-direction: column;
-  padding: 3rem;
-  margin-left: 2rem;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 3.5rem 2rem 3.5rem !important;
 }
 
-#bsc-logo {
-  padding-bottom: 0.9rem;
-  width: 100px;
-  height: auto;
+#multichain-pic{
+  width: 500px;
+  height: 450px;
+}
+
+#multichain-pic:hover{
+  opacity: 1 !important;
+}
+
+.center-pics{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
