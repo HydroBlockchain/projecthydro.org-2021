@@ -24,10 +24,6 @@ description: meta.description
         <div class="content span-3-75" id="intro-structure">
           <nav class="menu">
             {% include language_selector_navbar_item.html %}
-            <!-- <a href="#protocol-focus">Protocols</a>
-            <a href="#focus-team">Team</a>
-            <a href="#focus-roadmap">Roadmap</a>
-            <a href="#footer-structure">dApps</a> -->
           </nav>
           <div class="center-everything" id="intro-center">
             <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
@@ -54,8 +50,8 @@ description: meta.description
 
       <section class="panel">
         <div class="intro joined">
-          <h2>Multichained Protocols</h2>
-          <p>Leverage the full power of multiple chains using the Hydro protocols.</p>
+          <h2>{% t multichains_title %}</h2>
+          <p>{% t multichains_subline %}</p>
         </div>
 
         <div class="multichains" >
@@ -65,20 +61,16 @@ description: meta.description
         <div class="intro joined" id="tokenomics-section">
           <div class="tokenomics">
             <div class="blockchains-section">
-            <h3>Chains</h3>
-            The Hydro protocols are available to use on multiple networks. 
-            All of our protocols and dApps are powered by Hydro tokens.
+            <h3>{% t tokenomics_chains_title %}</h3>
+                {% t tokenomics_chains_subline %}
           </div>
           <div class="escrow-section">
-            <h3>Bridge</h3>
-            Hydro has a total supply of 111,111,111 million which was elected by its community. 
-            The distribution between chains is handled by our bridge that swaps your tokens between chains. 
-            Once the swap from one chain to another is complete you are free to enjoy the benefits of your chosen network.
+            <h3>{% t tokenomics_bridge_title %}</h3>
+                {% t tokenomics_bridge_subline %}
           </div>
           <div class="evaporation-section">
-            <h3>Evaporation</h3>
-            All of the Hydro tokens that are consumed by a Smart Contract will evaporate, 
-            hence the supply will continously decrease over time.
+            <h3>{% t tokenomics_evaporation_title %}</h3>
+                {% t tokenomics_evaporation_subline %}
           </div>
           </div>
         </div>
@@ -89,60 +81,75 @@ description: meta.description
           <div class="eth-specs">
             <div class="center-pics">
             <a href="https://ethereum.org/en/" target="_blank" rel="noreferrer"><img id="eth-logo" src="assets/images/eth.png" alt="eth-logo" /></a>
-            <h5>Ethereum</h5>
+            <h5>{% t ethereum %}</h5>
           </div>
             <div class="spec-sheet">
-            <label>Contract Address:</label> <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
-            <label>Symbol:</label> Hydro 
-            <label>Decimals:</label> 18
+            <label>{% t spec_address %}</label> 
+             <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
+            <label>{% t spec_symbol %}</label> 
+             {% t spec_token_symbol %} 
+            <label>{% t spec_decimal %}</label>
+             18
             </div>
           </div>
 
           <div class="bsc-specs">
             <div class="center-pics">
             <a href="https://www.binance.org/en/smartChain" target="_blank" rel="noreferrer"><img id="bsc-logo" src="assets/images/bsc.png" alt="bsc-logo" /></a>
-            <h5>Binance Smart Chain</h5>
+            <h5>{% t binance_smart_chain %}</h5>
           </div>
             <div class="spec-sheet">
-            <label>Contract Address:</label> <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
-            <label>Symbol:</label> Hydro 
-            <label>Decimals:</label> 18
+            <label>{% t spec_address %}</label> 
+             <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
+            <label>{% t spec_symbol %}</label>
+             {% t spec_token_symbol %} 
+            <label>{% t spec_decimal %}</label>
+             18
             </div>
           </div>
 
           <div class="dot-specs">
             <div class="center-pics">
             <a href="https://polkadot.network/" target="_blank" rel="noreferrer"><img id="dot-logo" src="assets/images/dot.png" alt="dot-logo" /></a>
-            <h5>Polkadot</h5>  
+            <h5>{% t polkadot %}</h5>  
           </div>
             <div class="spec-sheet">
-            <label>Contract Address:</label> <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
-            <label>Symbol:</label> Hydro 
-            <label>Decimals:</label> 18
+            <label>{% t spec_address %}</label> 
+             <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
+            <label>{% t spec_symbol %}</label>
+             {% t spec_token_symbol %} 
+            <label>{% t spec_decimal %}</label>
+             18
             </div>
           </div>
 
           <div class="algo-specs">
             <div class="center-pics">
             <a href="https://www.algorand.com/" target="_blank" rel="noreferrer"><img id="algo-logo" src="assets/images/algo.png" alt="algo-logo" /></a>
-            <h5>Algorand</h5>  
+            <h5>{% t algorand %}</h5>  
           </div>
             <div class="spec-sheet">
-            <label>Contract Address:</label> <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
-            <label>Symbol:</label> Hydro 
-            <label>Decimals:</label> 18
+            <label>{% t spec_address %}</label>
+             <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
+            <label>{% t spec_symbol %}</label>
+             {% t spec_token_symbol %}  
+            <label>{% t spec_decimal %}</label>
+             18
             </div>
           </div>
 
           <div class="ada-specs">
             <div class="center-pics">
             <a href="https://cardano.org/" target="_blank" rel="noreferrer"><img id="ada-logo" src="assets/images/ada.png" alt="ada-logo" /></a>
-            <h5>Cardano</h5>  
+            <h5>{% t cardano %}</h5>  
           </div>
             <div class="spec-sheet">
-            <label>Contract Address:</label> <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
-            <label>Symbol:</label> Hydro 
-            <label>Decimals:</label> 18
+            <label>{% t spec_address %}</label>
+             <a target="_blank" rel="noreferrer" href="https://etherscan.io/address/0xebbdf302c940c6bfd49c6b165f457fdb324649bc">0xebbdf302c940c6bfd49c6b165f457fdb324649bc</a>
+            <label>{% t spec_symbol %}</label>
+             {% t spec_token_symbol %}  
+            <label>{% t spec_decimal %}</label>
+             18
             </div>
           </div>          
 
@@ -152,7 +159,7 @@ description: meta.description
 
       <!-- Protocol section -->
 
-      <section class="panel" id="protocol-focus">
+      <section class="panel">
         <div class="inner columns aligned" id="protocol-center">
           <div class="intro">
             <h2>{% t protocol_title %}</h2>
@@ -222,7 +229,7 @@ description: meta.description
         </div>
       </section>
 
-      <!-- dAmbassadors section -->
+      <!-- team section -->
 
       <section class="panel">
         <div class="intro">
@@ -273,11 +280,11 @@ description: meta.description
           </div>
         </div>
 
-        <!-- Team section -->
+        <!-- team -->
 
         <div class="da-team-outer">
 
-          <div class="da-team-column" style="width: auto;justify-content:column!important;">
+          <div class="da-team-column" style="width:auto;justify-content:column!important;">
             <div class="da-member">
               <img class="da-pic" alt="saurav_kumar" src="assets/images/da-team/saurav.png" />
               <p class="da-name">Saurav Kumar</p>
@@ -302,7 +309,7 @@ description: meta.description
             </div>
           </div>
 
-          <div class="da-team-column" id="focus-team">
+          <div class="da-team-column">
             <div class="da-member">
               <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl.png" />
               <p class="da-name">Carl Ulvinen</p>
@@ -427,7 +434,7 @@ description: meta.description
             </div>
           </div>
 
-          <div class="da-team-column" id="focus-team">
+          <div class="da-team-column">
             <div class="da-member">
               <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.png" />
               <p class="da-name">Marlo Villaos</p>
@@ -454,7 +461,7 @@ description: meta.description
           </div>
       </section>
 
-      <!-- Discover roadmap panel -->
+      <!-- Roadmap section -->
 
       <section class="panel">
         <div class="intro">
@@ -463,11 +470,11 @@ description: meta.description
         </div>
         <div class="inner columns aligned">
 
-          <!-- product section -->
+          <!-- products -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
-              <div class="product_header" id="focus-roadmap">
+              <div class="product_header">
                 <h3>{% t product_title %}</h3>
               </div>
               <label>{% t q3_2020 %}</label>
@@ -499,7 +506,7 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Protocol section -->
+          <!-- protocol -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
@@ -537,7 +544,7 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Wallet Section -->
+          <!-- wallet -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
@@ -566,7 +573,7 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Remittance Section -->
+          <!-- remittance -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
@@ -590,7 +597,7 @@ description: meta.description
             </div>
           </div>
 
-          <!-- Marketing Section -->
+          <!-- marketing -->
 
           <div class="span-1-75" id="roadmap-structure">
             <div class="product_list">
@@ -623,7 +630,7 @@ description: meta.description
         </div>
       </section>
 
-      <!-- Discover roadmap panel -->
+        <!-- Exchanges & Partners section -->
 
       <section class="panel">
         <div class="intro" id="blog-structure" style="margin-top:-2rem; ">
@@ -632,8 +639,6 @@ description: meta.description
           <br>
           <span id="blog-feed">{% t loading %}</span> <br>
         </div>
-
-        <!-- Exchanges & Partnes -->
         <div class="inner columns aligned" id="exchanges-partner-structure">
           <div class="exchanges_column">
             <h3 id="exchanges-partner-title-structure">{% t exchanges_title %}</h3>
@@ -678,7 +683,6 @@ description: meta.description
               <img class="partner-pic" src="assets/images/partners/bloceducare.png" alt="bloceducare" /></a>
             <a href="https://www.emedchain.com/" target="_blank" rel="noreferrer">
               <img class="partner-pic" src="assets/images/partners/emedchain.png" alt="emedchain" /></a>
-
           </div>
           <div class="inner columns aligned" id="partner-structure">
             <div class="partner_column">
@@ -689,7 +693,9 @@ description: meta.description
                 <img class="partner-pic" src="assets/images/partners/coinnewsnet.png" alt="cryptonewsnet" /></a>
             </div>
           </div>
+
           <!-- legal section -->
+
           <!-- <div class="inner columns aligned" id="partner-structure">
             <div class="partner_column">
               <h3>Legal Partner</h3>
@@ -702,12 +708,9 @@ description: meta.description
           <div id="overlayDocs" onclick="closeDocs()">
             <div id="text-Docs">
               <div class="broaden">
-                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros
-                  Github</a>
-                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our
-                  Documentation</a>
-                <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank"
-                  rel="noreferrer">{% t privacy_1 %}</a>
+                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros Github</a>
+                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
+                <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
               </div>
             </div>
           </div>
@@ -726,28 +729,16 @@ description: meta.description
         <div class="inner columns divided" id="footer-structure">
           <div class="span-1-2">
             <ul class="contact-icons">
-              <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'"
-                target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-twitter transparent-icon"
-                onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-medium transparent-icon" onclick="https://medium.com/@ProjectHydro'"
-                target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-linkedin transparent-icon"
-                onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank"
-                rel="noreferrer"></li>
+              <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-twitter transparent-icon" onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-medium transparent-icon" onclick="https://medium.com/@ProjectHydro'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-linkedin transparent-icon" onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank" rel="noreferrer"></li>
             </ul>
             <ul class="contact-icons">
-              <li class="icon brands fa-facebook transparent-icon"
-                onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank"
-                rel="noreferrer"></li>
-              <li class="icon brands fa-reddit transparent-icon"
-                onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-instagram transparent-icon"
-                onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'"
-                target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-youtube transparent-icon"
-                onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank"
-                rel="noreferrer"></li>
+              <li class="icon brands fa-facebook transparent-icon" onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-reddit transparent-icon" onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-instagram transparent-icon" onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'" target="_blank" rel="noreferrer"></li>
+              <li class="icon brands fa-youtube transparent-icon" onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank" rel="noreferrer"></li>
             </ul>
           </div>
         </div>
