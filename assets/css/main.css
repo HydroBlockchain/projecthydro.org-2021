@@ -2512,6 +2512,10 @@ a:hover {
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
 
+  canvas {
+    display: none!important;
+  }
+
   #multichain-pic {
     width: 250px !important;
     height: auto !important;
@@ -2535,7 +2539,7 @@ a:hover {
     flex-direction: column !important;
   }
 
-  #blockchain-specs {
+  .blockchain-specs {
     width: auto !important;
     align-items: center;
   }
@@ -2753,7 +2757,7 @@ a:hover {
   padding: 1rem;
 }
 
-#blockchain-specs {
+.blockchain-specs {
   width: 60rem auto;
   display: flex;
   flex-direction: column;
@@ -2820,4 +2824,23 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+canvas {
+  margin-top: -15rem;
+  height: 80%!important;
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100% auto;
+  height: 50% auto;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
