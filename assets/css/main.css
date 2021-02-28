@@ -2549,8 +2549,9 @@ a:hover {
   .dot-specs,
   .ada-specs,
   .algo-specs {
+    width: auto!important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0.5rem !important;
   }
 
   .da-pic {
@@ -2788,6 +2789,7 @@ a:hover {
 .ada-specs,
 .algo-specs {
   color: white !important;
+  width: 450px;
   display: flex;
   flex-direction: column;
   padding: 3rem;
