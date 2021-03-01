@@ -2838,11 +2838,7 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  width: 100% auto;
-  height: 50% auto;
-  background-color: transparent;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  z-index: 0!important;
+  width: 100% auto!important;
+  height: 100% auto!important;
 }
