@@ -899,7 +899,6 @@ input[type=submit]:disabled {
   border-radius: 0.5rem;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-right: 1rem;
   background: #171717 !important;
 }
 
@@ -2512,8 +2511,16 @@ a:hover {
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
 
+  .animated-border {
+
+   
+    margin: 1rem!important;
+    margin-bottom: 1rem!important;
+  
+  }
+
   canvas {
-    display: none!important;
+    display: none !important;
   }
 
   #multichain-pic {
@@ -2549,7 +2556,7 @@ a:hover {
   .dot-specs,
   .ada-specs,
   .algo-specs {
-    width: auto!important;
+    width: auto !important;
     margin: 0 !important;
     padding: 0.5rem !important;
   }
@@ -2622,7 +2629,7 @@ a:hover {
   }
 
   .panel {
-    border-radius: 0rem;
+    border-radius: 0.5rem;
   }
 
   #partner-structure>.partner_column>h3 {
@@ -2693,7 +2700,8 @@ a:hover {
   }
 
   .Languages-btns {
-    background-color: #09243d !important
+    background-color: #09243d !important;
+    margin-top: 1rem;
   }
 
   .Languages .Language-select select {
@@ -2793,6 +2801,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  z-index: 1 !important;
 }
 
 #eth-logo,
@@ -2830,15 +2839,47 @@ a:hover {
 
 canvas {
   margin-top: -15rem;
-  height: 80%!important;
+  height: 80% !important;
   display: block;
-  vertical-align: bottom;
 }
 
 /* ---- particles.js container ---- */
 
 #particles-js {
-  z-index: 0!important;
-  width: 100% auto!important;
-  height: 100% auto!important;
+  z-index: 0 !important;
+  width: 100% auto !important;
+  height: 100% auto !important;
+}
+
+/* ---- animated-border ---- */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.animated-border {
+  background: linear-gradient(
+    130deg, 
+  rgba(22, 31, 58, 0.316), 
+  rgba(85, 64, 179, 0.241), 
+  rgba(108, 161, 197, 0.282), 
+  rgba(95, 159, 242, 0.255), 
+  rgba(13, 44, 73, 0.59)
+  );
+  animation: gradient 20s ease infinite;
+	background-size: 1000% 100% ;
+	padding: 5px 6px;
+	border-radius: 10px;
+	display: inline-block;
+  margin-right: 1rem;
 }
