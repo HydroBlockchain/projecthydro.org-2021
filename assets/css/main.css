@@ -146,11 +146,17 @@ blockquote {
   max-height: 5.25rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 500px;
 }
 
 #blog-title {
   margin-bottom: 0.2rem;
   margin-left: 1.3rem;
+}
+
+#blog-structure{
+  width: 600px;
+  padding-left: 2rem;
 }
 
 html {
@@ -2017,6 +2023,9 @@ body.is-preload #wrapper {
     -ms-transform: none;
     transform: none
   }
+  #blog-structure {
+    padding-left: 0;
+}
 }
 
 @media screen and (max-width:420px) {
@@ -2047,6 +2056,9 @@ body.is-preload #wrapper {
   .panel{
     width: 100%;
   }
+  blockquote{
+    width: 200px!important;
+  }
 }
 
 @media screen and (max-width:320px) {
@@ -2056,6 +2068,10 @@ body.is-preload #wrapper {
   .panel{
     width: 100%;
   }
+  blockquote{
+    width: 200px!important;
+  }
+  
 }
 
 .transparent-icon:before {
@@ -2570,6 +2586,10 @@ a:hover {
 
 /* Mobile Fixes */
 @media screen and (max-width:736px) {
+
+  blockquote{
+    width: 300px;
+  }
 
   .animated-border {
 
