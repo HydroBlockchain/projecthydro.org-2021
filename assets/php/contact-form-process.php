@@ -64,7 +64,7 @@ if (isset($_POST['Email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <link href="/assets/css/application.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
     <div class="center-everything" style="padding-top:150px;">
     <h3>Thank you for contacting us, we will be in touch shortly.</h3>
     <br>
