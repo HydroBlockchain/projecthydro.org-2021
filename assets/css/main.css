@@ -1986,11 +1986,30 @@ body.is-preload #wrapper {
   }
 }
 
+
+
+@media screen and (max-width:550px) {
+  #wrapper {
+    width: 530px;
+  }
+  .panel{
+    width: 100%;
+  }
+  .Languages {
+    padding: 1.8rem 2rem 1.3875rem 2.5rem !important;
+}
+}
+
+
 @media screen and (max-width:480px) {
   #wrapper {
     box-shadow: none;
-    width: 400px;
+    width: 460px;
   }
+
+  .Languages {
+    padding: .8875rem 2rem 1.3875rem 2.5rem !important;
+}
 
   body.is-preload #wrapper {
     -moz-transform: none;
@@ -2000,21 +2019,42 @@ body.is-preload #wrapper {
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
   #wrapper {
-    width: 380px;
+    width: 400px;
+  }
+  .panel{
+    width: 100%;
+  }
+  .Languages {
+    padding: .8875rem 2rem 1.3875rem 2.5rem !important;
+}
+}
+
+@media screen and (max-width:380px) {
+  #wrapper {
+    width: 370px;
+  }
+  .panel{
+    width: 100%;
   }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:350px) {
   #wrapper {
-    width: 360px;
+    width: 350px;
+  }
+  .panel{
+    width: 100%;
   }
 }
 
 @media screen and (max-width:320px) {
   #wrapper {
     width: 320px;
+  }
+  .panel{
+    width: 100%;
   }
 }
 
@@ -2728,7 +2768,7 @@ a:hover {
   }
 
   .Languages {
-    padding: .8875rem 1.75rem 1.3875rem 1.75rem
+    padding: 1.5rem 1.75rem 1.3875rem 2.5rem;
   }
 }
 
