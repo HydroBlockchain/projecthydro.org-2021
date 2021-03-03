@@ -1926,7 +1926,8 @@ input[type=submit]:disabled {
 
 @media screen and (max-width:480px) {
   #page-wrapper {
-    padding: 0
+    padding: 0;
+    justify-content: center!important;
   }
 }
 
@@ -1987,7 +1988,8 @@ body.is-preload #wrapper {
 
 @media screen and (max-width:480px) {
   #wrapper {
-    box-shadow: none
+    box-shadow: none;
+    width: 400px;
   }
 
   body.is-preload #wrapper {
@@ -1995,6 +1997,24 @@ body.is-preload #wrapper {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none
+  }
+}
+
+@media screen and (max-width:400px) {
+  #wrapper {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  #wrapper {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  #wrapper {
+    width: 320px;
   }
 }
 
