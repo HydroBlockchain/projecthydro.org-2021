@@ -1,0 +1,218 @@
+/* general */
+body {
+    background: #1A293C;
+    color: #8ab5cd;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  
+  .wrapper {
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 900px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    padding: 1rem;
+  }
+  
+  .bottom {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .placement {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  table {
+    width: 50% auto;
+    margin: auto;
+  }
+  
+  /* inputs */
+  input {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    width: 260px;
+    height: 28px;
+    border: 1px solid #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  input[name="Email_Address"] {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    width: 530px;
+    border: 1px solid #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  input[name="Position"] {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    width: 530px;
+    border: 1px solid #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  textarea[name="Introduction"] {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    width: 530px;
+    height: auto;
+    border: 1px solid #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  input[name="CaptchaCode"] {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    width: 130px;
+    font-size: 24px;
+    text-align: center;
+    margin: none;
+    border: 1px solid #8ab5cd;
+    border-radius: 5px;
+  }
+  
+  input[name="skip_Submit"] {
+    background: #1A293C;
+    color: #8ab5cd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  input[name="file1"] {
+    background: rgb(31, 53, 77);
+    color: #8ab5cd;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 686px) {
+  
+    /* general */
+    body {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wrapper {
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+    }
+  
+    h2 {
+      padding: 1rem;
+    }
+  
+    .bottom {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    table {
+      width: 50% auto;
+      margin: auto;
+    }
+  
+    /* inputs */
+    input {
+      width: 90%;
+      height: 28px;
+      border: 1px solid #8ab5cd;
+      border-radius: 5px;
+    }
+  
+    input[name="Email_Address"] {
+      width: 95%;
+      border: 1px solid #8ab5cd;
+      border-radius: 5px;
+    }
+  
+    input[name="Position"] {
+      width: 95%;
+      border: 1px solid #8ab5cd;
+      border-radius: 5px;
+    }
+  
+    textarea[name="Introduction"] {
+      width: 95%;
+      height: auto;
+      border: 1px solid #8ab5cd;
+      border-radius: 5px;
+    }
+  
+    input[name="skip_CaptchaCode"] {
+      width: 130px;
+      font-size: 24px;
+      text-align: center;
+      margin: none;
+      border: 1px solid #8ab5cd;
+      border-radius: 5px;
+    }
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  td {
+    font-size: 13px;
+    font-weight: 300;
+  }
