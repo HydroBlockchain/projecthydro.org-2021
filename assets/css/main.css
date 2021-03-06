@@ -3097,13 +3097,23 @@ canvas {
 }
 
 /* The alert message box */
+.center_alert{
+  margin-top: 3rem;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: +1000;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .alert {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
   height: 100px;
-  left: 35%;
   top: 3rem;
   padding: 10px;
   background-color: #9e9e9e;
@@ -3141,3 +3151,4 @@ canvas {
 .closebtn:hover {
   color: black;
 }
+
