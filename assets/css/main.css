@@ -2958,3 +2958,33 @@ canvas {
 	display: inline-block;
   margin-right: 1rem;
 }
+
+
+/* The alert message box */
+.alert {
+  position: absolute;
+  left: 40rem;
+  right: 40rem;
+  padding: 50px;
+  background-color: #641a14; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  z-index: +1;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}

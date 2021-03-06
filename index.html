@@ -13,6 +13,12 @@ description: meta.description
 </head>
 
 <body class="is-preload">
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Caution! Do not trade the old Hydro contract at Uniswap!
+  </div>
+
+  
   <div id="page-wrapper">
     <div class="hideDesktop">
       {% include language_selector_navbar_item.html %}
@@ -28,6 +34,7 @@ description: meta.description
             {% include language_selector_navbar_item.html %}
           </nav>
           <div class="center-everything" id="intro-center">
+            
             <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
             <h1><span>{% t hydro_title %}</span></h1>
             <p>{% t hydro_is %}</p>
