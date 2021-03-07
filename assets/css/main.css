@@ -2736,6 +2736,7 @@ canvas {
   .blockchain-specs {
     width: auto !important;
     align-items: center;
+    padding-top: 2rem;
   }
 
   .eth-specs,
