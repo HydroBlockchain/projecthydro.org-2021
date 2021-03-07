@@ -1946,7 +1946,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  
 }
 
 .blockchains {
@@ -1983,7 +1983,7 @@ a:hover {
 #bsc-logo,
 #dot-logo,
 #ada-logo,
-#algo-specs {
+#algo-logo {
   width: 100px;
   height: auto;
 }
@@ -2687,6 +2687,15 @@ canvas {
 /* Devices */
 
 @media screen and (max-width:736px) {
+
+  #eth-logo, #bsc-logo, #dot-logo, #ada-logo, #algo-logo {
+    width: 50px;
+    height: auto;
+}
+  .spec-sheet{
+    font-size: 80%!important;
+    padding-bottom: 2rem;
+  }
 
   blockquote {
     width: 300px;
