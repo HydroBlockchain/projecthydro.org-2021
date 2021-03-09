@@ -16,12 +16,15 @@ description: meta.description
 
   <!-- Warning -->
   <div class="center_alert" id="center_alert">
-  <div class="alert">    
-    <div class="alert_text"><div id="warning_alert">Warning!</div> Do not trade the old Hydro contract on Uniswap!</div>
-    <span class="closebtn" onclick="this.parentElement.style.display='none', changeZIndex(0, 'center_alert')">&times;</span>
+    <div class="alert">
+      <div class="alert_text">
+        <div id="warning_alert">{% t initial_warning %}</div> {% t content_warning %}
+      </div>
+      <span class="closebtn"
+        onclick="this.parentElement.style.display='none', changeZIndex(0, 'center_alert')">&times;</span>
+    </div>
   </div>
-</div>
-  
+
   <div id="page-wrapper">
     <div class="hideDesktop">
       {% include language_selector_navbar_item.html %}
@@ -31,755 +34,873 @@ description: meta.description
       <!-- Initial panel -->
       <div class="animated-border">
 
-      <section class="panel banner left">
-        <div class="content span-3-75" id="intro-structure">
-          <nav class="menu">
-            {% include language_selector_navbar_item.html %}
-          </nav>
-          <div class="center-everything" id="intro-center">
-            
-            <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
-            <h1><span>{% t hydro_title %}</span></h1>
-            <p>{% t hydro_is %}</p>
+        <section class="panel banner left">
+          <div class="content span-3-75" id="intro-structure">
+            <nav class="menu">
+              {% include language_selector_navbar_item.html %}
+            </nav>
+            <div class="center-everything" id="intro-center">
+
+              <span><img id="hydro-logo" src="assets/images/hydro_logo.png" alt="Hydro Logo" /></span>
+              <h1><span>{% t hydro_title %}</span></h1>
+              <p>{% t hydro_is %}</p>
+            </div>
+            <div class="small-text">Hydro Foundation</div>
           </div>
-          <div class="small-text">Hydro Foundation</div>
-        </div>
-      </section>
+        </section>
       </div>
 
       <!-- Ecosystem section -->
       <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro joined">
-          <h2>{% t ecosystem_title %}</h2>
-          <p>{% t ecosystem_subline %}</p>
-        </div>
-        <div class="inner" id="first">
-          <img id="ecosystem-pic" src="assets/images/layers.png" alt="blockchain-layers" />
-        </div>
-      </section>
-    </div>
+        <section class="panel">
+          <div class="intro joined">
+            <h2>{% t ecosystem_title %}</h2>
+            <p>{% t ecosystem_subline %}</p>
+          </div>
+          <div class="inner" id="first">
+            <img id="ecosystem-pic" src="assets/images/layers.png" alt="blockchain-layers" />
+          </div>
+        </section>
+      </div>
 
       <!--- Multichains section-->
 
       <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro joined" id="multichain-initial">
-          <h2>{% t multichains_title %}</h2>
-          <p>{% t multichains_subline %}</p>
-        </div>
+        <section class="panel">
+          <div class="intro joined" id="multichain-initial">
+            <h2>{% t multichains_title %}</h2>
+            <p>{% t multichains_subline %}</p>
+          </div>
 
-        <div class="multichains" >
-          <img id="multichain-pic" src="assets/images/multichain.png" alt="multichain" />
-        </div>
-        
-        <div class="intro joined" id="tokenomics-section">
-          <div class="tokenomics">
-            <div class="blockchains-section">
-            <h3>{% t tokenomics_chains_title %}</h3>
+          <div class="multichains">
+            <img id="multichain-pic" src="assets/images/multichain.png" alt="multichain" />
+          </div>
+
+          <div class="intro joined" id="tokenomics-section">
+            <div class="tokenomics">
+              <div class="blockchains-section">
+                <h3>{% t tokenomics_chains_title %}</h3>
                 {% t tokenomics_chains_subline %}
-          </div>
-          <div class="escrow-section">
-            <h3>{% t tokenomics_bridge_title %}</h3>
+              </div>
+              <div class="escrow-section">
+                <h3>{% t tokenomics_bridge_title %}</h3>
                 {% t tokenomics_bridge_subline %}
-          </div>
-          <div class="evaporation-section">
-            <h3>{% t tokenomics_evaporation_title %}</h3>
+              </div>
+              <div class="evaporation-section">
+                <h3>{% t tokenomics_evaporation_title %}</h3>
                 {% t tokenomics_evaporation_subline %}
-          </div>
-          </div>
-        </div>
-
-        
-        <div id="particles-js">
-        <div class="blockchain-specs">
-          <div class="blockchains">
-
-          <div class="eth-specs">
-            <div class="center-pics">
-            <a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank" rel="noreferrer"><img id="eth-logo" src="assets/images/eth.png" alt="eth-logo" /></a>
-            <h5>{% t ethereum %}</h5>
-          </div>
-            <div class="spec-sheet">
-            <label>{% t spec_address %}</label> 
-             <a target="_blank" rel="noreferrer" href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01">0x946112efab61c3636cbd52de2e1392d7a75a6f01</a>
-            <label>{% t spec_symbol %}</label> 
-             {% t spec_token_symbol %} 
-            <label>{% t spec_decimal %}</label>
-             18
+              </div>
             </div>
           </div>
 
-          <div class="bsc-specs">
-            <div class="center-pics">
-            <a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071" target="_blank" rel="noreferrer"><img id="bsc-logo" src="assets/images/bsc.png" alt="bsc-logo" /></a>
-            <h5>{% t binance_smart_chain %}</h5>
-          </div>
-            <div class="spec-sheet">
-            <label>{% t spec_address %}</label> 
-             <a target="_blank" rel="noreferrer" href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071">0xf3DBB49999B25c9D6641a9423C7ad84168D00071</a>
-            <label>{% t spec_symbol %}</label>
-             {% t spec_token_symbol %} 
-            <label>{% t spec_decimal %}</label>
-             18
+
+          <div id="particles-js">
+            <div class="blockchain-specs">
+              <div class="blockchains">
+
+                <div class="eth-specs">
+                  <div class="center-pics">
+                    <a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank"
+                      rel="noreferrer"><img id="eth-logo" src="assets/images/eth.png" alt="eth-logo" /></a>
+                    <h5>{% t ethereum %}</h5>
+                  </div>
+                  <div class="spec-sheet">
+                    <label>{% t spec_address %}</label>
+                    <a target="_blank" rel="noreferrer"
+                      href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01">0x946112efab61c3636cbd52de2e1392d7a75a6f01</a>
+                    <label>{% t spec_symbol %}</label>
+                    {% t spec_token_symbol %}
+                    <label>{% t spec_decimal %}</label>
+                    18
+                  </div>
+                </div>
+
+                <div class="bsc-specs">
+                  <div class="center-pics">
+                    <a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071" target="_blank"
+                      rel="noreferrer"><img id="bsc-logo" src="assets/images/bsc.png" alt="bsc-logo" /></a>
+                    <h5>{% t binance_smart_chain %}</h5>
+                  </div>
+                  <div class="spec-sheet">
+                    <label>{% t spec_address %}</label>
+                    <a target="_blank" rel="noreferrer"
+                      href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071">0xf3DBB49999B25c9D6641a9423C7ad84168D00071</a>
+                    <label>{% t spec_symbol %}</label>
+                    {% t spec_token_symbol %}
+                    <label>{% t spec_decimal %}</label>
+                    18
+                  </div>
+                </div>
+
+                <div class="dot-specs">
+                  <div class="center-pics">
+                    <a href="https://polkadot.network/" target="_blank" rel="noreferrer"><img id="dot-logo"
+                        src="assets/images/dot.png" alt="dot-logo" /></a>
+                    <h5>{% t polkadot %}</h5>
+                  </div>
+                  <div class="spec-sheet">
+                    <label>{% t spec_address %}</label>
+                    <a target="_blank" rel="noreferrer" href="">Update will follow</a>
+                    <label>{% t spec_symbol %}</label>
+                    {% t spec_token_symbol %}
+                    <label>{% t spec_decimal %}</label>
+                    18
+                  </div>
+                </div>
+
+                <div class="algo-specs">
+                  <div class="center-pics">
+                    <a href="https://www.algorand.com/" target="_blank" rel="noreferrer"><img id="algo-logo"
+                        src="assets/images/algo.png" alt="algo-logo" /></a>
+                    <h5>{% t algorand %}</h5>
+                  </div>
+                  <div class="spec-sheet">
+                    <label>{% t spec_address %}</label>
+                    <a target="_blank" rel="noreferrer" href="">Update will follow</a>
+                    <label>{% t spec_symbol %}</label>
+                    {% t spec_token_symbol %}
+                    <label>{% t spec_decimal %}</label>
+                    18
+                  </div>
+                </div>
+
+                <div class="ada-specs">
+                  <div class="center-pics">
+                    <a href="https://cardano.org/" target="_blank" rel="noreferrer"><img id="ada-logo"
+                        src="assets/images/ada.png" alt="ada-logo" /></a>
+                    <h5>{% t cardano %}</h5>
+                  </div>
+                  <div class="spec-sheet">
+                    <label>{% t spec_address %}</label>
+                    <a target="_blank" rel="noreferrer" href="">Update will follow</a>
+                    <label>{% t spec_symbol %}</label>
+                    {% t spec_token_symbol %}
+                    <label>{% t spec_decimal %}</label>
+                    18
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-
-          <div class="dot-specs">
-            <div class="center-pics">
-            <a href="https://polkadot.network/" target="_blank" rel="noreferrer"><img id="dot-logo" src="assets/images/dot.png" alt="dot-logo" /></a>
-            <h5>{% t polkadot %}</h5>  
-          </div>
-            <div class="spec-sheet">
-            <label>{% t spec_address %}</label> 
-             <a target="_blank" rel="noreferrer" href="">Update will follow</a>
-            <label>{% t spec_symbol %}</label>
-             {% t spec_token_symbol %} 
-            <label>{% t spec_decimal %}</label>
-             18
-            </div>
-          </div>
-
-          <div class="algo-specs">
-            <div class="center-pics">
-            <a href="https://www.algorand.com/" target="_blank" rel="noreferrer"><img id="algo-logo" src="assets/images/algo.png" alt="algo-logo" /></a>
-            <h5>{% t algorand %}</h5>  
-          </div>
-            <div class="spec-sheet">
-            <label>{% t spec_address %}</label>
-             <a target="_blank" rel="noreferrer" href="">Update will follow</a>
-            <label>{% t spec_symbol %}</label>
-             {% t spec_token_symbol %}  
-            <label>{% t spec_decimal %}</label>
-             18
-            </div>
-          </div>
-
-          <div class="ada-specs">
-            <div class="center-pics">
-            <a href="https://cardano.org/" target="_blank" rel="noreferrer"><img id="ada-logo" src="assets/images/ada.png" alt="ada-logo" /></a>
-            <h5>{% t cardano %}</h5>  
-          </div>
-            <div class="spec-sheet">
-            <label>{% t spec_address %}</label>
-             <a target="_blank" rel="noreferrer" href="">Update will follow</a>
-            <label>{% t spec_symbol %}</label>
-             {% t spec_token_symbol %}  
-            <label>{% t spec_decimal %}</label>
-             18
-            </div>
-          </div>          
-        </div>
-
-        </div>
-        </div>    
-      </section>
+        </section>
       </div>
 
       <!-- Protocol section -->
 
       <div class="animated-border">
 
-      <section class="panel" >
-        
-        <div class="inner columns aligned" id="protocol-center">
-          <div class="intro">
-            <h2>{% t protocol_title %}</h2>
-            <p>{% t protocol_subline %}</p>
+        <section class="panel">
+
+          <div class="inner columns aligned" id="protocol-center">
+            <div class="intro">
+              <h2>{% t protocol_title %}</h2>
+              <p>{% t protocol_subline %}</p>
+            </div>
+
+            <div class="span-1-75" id="protocol-structure">
+              <div class="protocol-one">
+                <div class="row-flex">
+                  <img alt="Raindrop" class="protocol-pic" src="assets/images/roadmap/raindrop.png" />
+                  <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                      href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Raindrop">Raindrop</a></h3>
+                </div>
+                <p class="protocol-text">{% t raindrop_text %}</p>
+              </div>
+
+              <div class="protocol-two">
+                <div class="row-flex">
+                  <img alt="Snowflake" class="protocol-pic" src="assets/images/roadmap/snowflake.png" />
+                  <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                      href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Snowflake/Snowflake_DRAFT.md">Snowflake</a>
+                  </h3>
+                </div>
+                <p class="protocol-text">{% t snowflake_text %}</p>
+              </div>
+            </div>
+
+            <div class="span-1-75">
+              <div class="protocol-one">
+                <div class="row-flex">
+                  <img alt="Ice" class="protocol-pic" src="assets/images/roadmap/ice.png" />
+                  <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                      href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Ice/Ice_DRAFT.md">Ice</a></h3>
+                </div>
+                <p class="protocol-text">{% t ice_text %}</p>
+              </div>
+
+              <div class="protocol-two">
+                <div class="row-flex">
+                  <img alt="Tide" class="protocol-pic" src="assets/images/roadmap/tide.png" />
+                  <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                      href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Tide">Tide</a></h3>
+                </div>
+                <p class="protocol-text">{% t tide_text %}.</p>
+              </div>
+            </div>
+
+            <div class="span-1-75">
+              <div class="protocol-one">
+                <div class="row-flex">
+                  <img alt="Hail" class="protocol-pic" src="assets/images/roadmap/hail.png" />
+                  <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
+                      href="https://github.com/HydroBlockchain/Hail">Hail</a></h3>
+                </div>
+                <p class="protocol-text">{% t hail_text %}</p>
+              </div>
+
+              <div class="protocol-two">
+                <div class="row-flex">
+                  <img alt="Mist" class="protocol-pic" src="assets/images/roadmap/mist.png" />
+                  <h3 id="protocol-title" id="protocol-title"><a href="#">Mist</a></h3>
+                </div>
+                <p class="protocol-text">{% t mist_text %}</p>
+              </div>
+            </div>
+
           </div>
-
-          <div class="span-1-75" id="protocol-structure">
-            <div class="protocol-one">
-              <div class="row-flex">
-                <img alt="Raindrop" class="protocol-pic" src="assets/images/roadmap/raindrop.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
-                    href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Raindrop">Raindrop</a></h3>
-              </div>
-              <p class="protocol-text">{% t raindrop_text %}</p>
-            </div>
-
-            <div class="protocol-two">
-              <div class="row-flex">
-                <img alt="Snowflake" class="protocol-pic" src="assets/images/roadmap/snowflake.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
-                    href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Snowflake/Snowflake_DRAFT.md">Snowflake</a>
-                </h3>
-              </div>
-              <p class="protocol-text">{% t snowflake_text %}</p>
-            </div>
-          </div>
-
-          <div class="span-1-75">
-            <div class="protocol-one">
-              <div class="row-flex">
-                <img alt="Ice" class="protocol-pic" src="assets/images/roadmap/ice.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
-                    href="https://github.com/HydroBlockchain/Hydro-Docs/blob/master/Ice/Ice_DRAFT.md">Ice</a></h3>
-              </div>
-              <p class="protocol-text">{% t ice_text %}</p>
-            </div>
-
-            <div class="protocol-two">
-              <div class="row-flex">
-                <img alt="Tide" class="protocol-pic" src="assets/images/roadmap/tide.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
-                    href="https://github.com/HydroBlockchain/Hydro-Docs/tree/master/Tide">Tide</a></h3>
-              </div>
-              <p class="protocol-text">{% t tide_text %}.</p>
-            </div>
-          </div>
-
-          <div class="span-1-75">
-            <div class="protocol-one">
-              <div class="row-flex">
-                <img alt="Hail" class="protocol-pic" src="assets/images/roadmap/hail.png" />
-                <h3 id="protocol-title"><a target="_blank" rel="noreferrer"
-                    href="https://github.com/HydroBlockchain/Hail">Hail</a></h3>
-              </div>
-              <p class="protocol-text">{% t hail_text %}</p>
-            </div>
-
-            <div class="protocol-two">
-              <div class="row-flex">
-                <img alt="Mist" class="protocol-pic" src="assets/images/roadmap/mist.png" />
-                <h3 id="protocol-title" id="protocol-title"><a href="#">Mist</a></h3>
-              </div>
-              <p class="protocol-text">{% t mist_text %}</p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
       <!-- team section -->
       <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro">
-          <h2>{% t team_title %}</h2>
-          <p>{% t team_subline %}</p>
-          <div class="fcf-form-group">
-            <button onclick="overlayContactUs()">{% t team_contact %}</button>
-          </div>
+        <section class="panel">
+          <div class="intro">
+            <h2>{% t team_title %}</h2>
+            <p>{% t team_subline %}</p>
+            <div class="fcf-form-group">
+              <button onclick="overlayContactUs()">{% t team_contact %}</button>
+            </div>
 
-          <!-- Contact us overlay -->
+            <!-- Contact us overlay -->
 
-          <div id="overlayContactUs">
-            <div id="overlayContactUsText">
+            <div id="overlayContactUs">
+              <div id="overlayContactUsText">
 
-              <div id="fcf-form">
-                <form id="fcf-form-id" class="fcf-form-class" method="post"
-                  action="/assets/php/contact-form-process.php">
+                <div id="fcf-form">
+                  <form id="fcf-form-id" class="fcf-form-class" method="post"
+                    action="/assets/php/contact-form-process.php">
 
-                  <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">{% t contact_name %}</label>
-                    <div class="fcf-input-group">
-                      <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    <div class="fcf-form-group">
+                      <label for="Name" class="fcf-label">{% t contact_name %}</label>
+                      <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">{% t contact_email %}</label>
-                    <div class="fcf-input-group">
-                      <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    <div class="fcf-form-group">
+                      <label for="Email" class="fcf-label">{% t contact_email %}</label>
+                      <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">{% t contact_message %}</label>
-                    <div class="fcf-input-group">
-                      <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
-                        required></textarea>
+                    <div class="fcf-form-group">
+                      <label for="Message" class="fcf-label">{% t contact_message %}</label>
+                      <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                          required></textarea>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="fcf-form-group" id="button-structure-contact-us">
-                    <button type="submit" class="button-contact-us">{% t button_send %}</button>
-                    <button onclick="closeContactUs()" class="button-contact-us">{% t button_close %}</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- team -->
-
-        <div class="da-team-outer">
-
-          <div class="da-team-column" style="width:auto;justify-content:column!important;">
-            <div class="da-member">
-              <img class="da-pic" alt="saurav_kumar" src="assets/images/da-team/saurav.png" />
-              <p class="da-name">Saurav Kumar</p>
-              <p class="da-position">{% t team_saurav %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/HydroSaurav" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/saurav-kumar-77b60776/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="da-member">
-              <img class="da-pic" alt="srinivas_ratnam" src="assets/images/da-team/srinivas.png" />
-              <p class="da-name">Srinivas Ratnam</p>
-              <p class="da-position">{% t team_srinivas %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini" aria-label="github">
-                  <i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+                    <div class="fcf-form-group" id="button-structure-contact-us">
+                      <button type="submit" class="button-contact-us">{% t button_send %}</button>
+                      <button onclick="closeContactUs()" class="button-contact-us">{% t button_close %}</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl.png" />
-              <p class="da-name">Carl Ulvinen</p>
-              <p class="da-position">{% t team_carl %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331" aria-label="github">
-                  <i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carl-ulvinen-5b654428" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="da-member">
-              <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.png" />
-              <p class="da-name">Jignesh Beladiya</p>
-              <p class="da-position">{% t team_jignesh %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
+          <!-- team -->
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="olufemi_steven" src="assets/images/da-team/stephen.png" />
-              <p class="da-name">Olufemi Stephen</p>
-              <p class="da-position">{% t team_stephen %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/olufemi-stephen-46b685173" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="da-member">
-              <img class="da-pic" alt="rai_masamune" src="assets/images/da-team/rai.png" />
-              <p class="da-name">Ryan Cañeba Peña</p>
-              <p class="da-position">{% t team_rai %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/raipena/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
+          <div class="da-team-outer">
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="naveen_gabriel" src="assets/images/da-team/naveen.png" />
-              <p class="da-name">Naveen Gabriel</p>
-              <p class="da-position">{% t team_naveen %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07" aria-label="github">
-                  <i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/naveen-gabriel/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+            <div class="da-team-column" style="width:auto;justify-content:column!important;">
+              <div class="da-member">
+                <img class="da-pic" alt="saurav_kumar" src="assets/images/da-team/saurav.png" />
+                <p class="da-name">Saurav Kumar</p>
+                <p class="da-position">{% t team_saurav %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/HydroSaurav"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/saurav-kumar-77b60776/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="srinivas_ratnam" src="assets/images/da-team/srinivas.png" />
+                <p class="da-name">Srinivas Ratnam</p>
+                <p class="da-position">{% t team_srinivas %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/cnusrini"
+                    aria-label="github">
+                    <i class="fab fa-github"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/srinivas-ratnam-3aba9b87/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
-            <div class="da-member">
-              <img class="da-pic" alt="mathew_george" src="assets/images/da-team/mathew.png" />
-              <p class="da-name">Mathew George</p>
-              <p class="da-position">{% t team_mathew %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat" aria-label="github">
-                  <i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mathew-george-a54111105/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="phi_quang" src="assets/images/da-team/sunny.png" />
-              <p class="da-name">Phi Quang</p>
-              <p class="da-position">{% t team_phi %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Zunnyzx" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="carl_ulvinen" src="assets/images/da-team/carl.png" />
+                <p class="da-name">Carl Ulvinen</p>
+                <p class="da-position">{% t team_carl %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/ux33-331"
+                    aria-label="github">
+                    <i class="fab fa-github"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/carl-ulvinen-5b654428" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="jignesh_beladiya" src="assets/images/da-team/jignesh.png" />
+                <p class="da-name">Jignesh Beladiya</p>
+                <p class="da-position">{% t team_jignesh %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/jigneshon"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jigneshon"
+                    aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
-            <div class="da-member">
-              <img class="da-pic" alt="dell_o" src="assets/images/da-team/dell.png" />
-              <p class="da-name">Dell O</p>
-              <p class="da-position">{% t team_dell %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/dell-o-8324b6131" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="ayushya_chitransh" src="assets/images/da-team/ayushya.png" />
-              <p class="da-name">Ayushya Chitransh</p>
-              <p class="da-position">{% t team_ayu %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh" aria-label="github">
-                  <i class="fab fa-github"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ayushya-chitransh/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="olufemi_steven" src="assets/images/da-team/stephen.png" />
+                <p class="da-name">Olufemi Stephen</p>
+                <p class="da-position">{% t team_stephen %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Stevebrainz?s=09"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/olufemi-stephen-46b685173" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="rai_masamune" src="assets/images/da-team/rai.png" />
+                <p class="da-name">Ryan Cañeba Peña</p>
+                <p class="da-position">{% t team_rai %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/RaiMasamune"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/raipena/"
+                    aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
-            <div class="da-member">
-              <img class="da-pic" alt="aljhon_manticahon" src="assets/images/da-team/aljhon.png" />
-              <p class="da-name">AIjhon Manticahon</p>
-              <p class="da-position">{% t team_aijhon %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="da-team-column">
-            <div class="da-member">
-              <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.png" />
-              <p class="da-name">Marlo Villaos</p>
-              <p class="da-position">{% t team_marlo %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer"
-                  href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/marlo-villaos-8330051b7/" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="naveen_gabriel" src="assets/images/da-team/naveen.png" />
+                <p class="da-name">Naveen Gabriel</p>
+                <p class="da-position">{% t team_naveen %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/jey07"
+                    aria-label="github">
+                    <i class="fab fa-github"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/naveen-gabriel/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="mathew_george" src="assets/images/da-team/mathew.png" />
+                <p class="da-name">Mathew George</p>
+                <p class="da-position">{% t team_mathew %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/deepumat"
+                    aria-label="github">
+                    <i class="fab fa-github"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/mathew-george-a54111105/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
-            <div class="da-member">
-              <img class="da-pic" alt="murphy" src="assets/images/da-team/murphy.png" />
-              <p class="da-name">Usifo Murphy</p>
-              <p class="da-position">{% t team_murphy %}</p>
-              <div class="da-buttons">
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/druids01" aria-label="twitter">
-                  <i class="fab fa-twitter"></i></a>
-                <a class="button-da" target="_blank" rel="noreferrer" href="https://linkedin.com/in/Usifo-Murphy" aria-label="linkedin">
-                  <i class="fab fa-linkedin"></i></a>
+
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="phi_quang" src="assets/images/da-team/sunny.png" />
+                <p class="da-name">Phi Quang</p>
+                <p class="da-position">{% t team_phi %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/Zunnyzx"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bqphi1210"
+                    aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="dell_o" src="assets/images/da-team/dell.png" />
+                <p class="da-name">Dell O</p>
+                <p class="da-position">{% t team_dell %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/DellMember"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/dell-o-8324b6131" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
               </div>
             </div>
-          </div>
-      </section>
+
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="ayushya_chitransh" src="assets/images/da-team/ayushya.png" />
+                <p class="da-name">Ayushya Chitransh</p>
+                <p class="da-position">{% t team_ayu %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://github.com/AyushyaChitransh"
+                    aria-label="github">
+                    <i class="fab fa-github"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/ayushya-chitransh/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="aljhon_manticahon" src="assets/images/da-team/aljhon.png" />
+                <p class="da-name">AIjhon Manticahon</p>
+                <p class="da-position">{% t team_aijhon %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/aljhon1122?s=09"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/aljhon-manticahon-8b342315a/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="da-team-column">
+              <div class="da-member">
+                <img class="da-pic" alt="marlo_villaos" src="assets/images/da-team/marlo.png" />
+                <p class="da-name">Marlo Villaos</p>
+                <p class="da-position">{% t team_marlo %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://twitter.com/MarloVillaos?s=07&fbclid=IwAR25sFZliMcDYzPePq4Px06rQrUTzXwHesUr_5K82MGnE3_KqtyFDjngAvY"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer"
+                    href="https://www.linkedin.com/in/marlo-villaos-8330051b7/" aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="da-member">
+                <img class="da-pic" alt="murphy" src="assets/images/da-team/murphy.png" />
+                <p class="da-name">Usifo Murphy</p>
+                <p class="da-position">{% t team_murphy %}</p>
+                <div class="da-buttons">
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://twitter.com/druids01"
+                    aria-label="twitter">
+                    <i class="fab fa-twitter"></i></a>
+                  <a class="button-da" target="_blank" rel="noreferrer" href="https://linkedin.com/in/Usifo-Murphy"
+                    aria-label="linkedin">
+                    <i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+        </section>
       </div>
 
       <!-- Roadmap section -->
       <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro">
-          <h2>{% t roadmap_title %}</h2>
-          <p>{% t roadmap_subline %}</p>
-        </div>
-        <div class="inner columns aligned">
-
-          <!-- products -->
-
-          <div class="span-1-75" id="roadmap-structure">
-            <div class="product_list">
-              <div class="product_header">
-                <h3>{% t product_title %}</h3>
-              </div>
-              <label>{% t q3_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t product_roadmap_wallet %}</li>
-                <li>{% t product_roadmap_dappstore %}</li>
-              </ul>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t product_roadmap_remittance %}</li>
-                <li>{% t product_roadmap_voting %}</li>
-                <li>{% t product_roadmap_donation %}</li>
-                <li>{% t product_roadmap_lottery %}</li>
-                <li>{% t product_roadmap_crowdfunding %}</li>
-              </ul>
-              <label>{% t q1_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t product_roadmap_password %}</li>
-                <li>{% t product_roadmap_dating %}</li>
-                <li>{% t product_roadmap_gift %}</li>
-                <li>{% t product_roadmap_freelance %}</li>
-                <li>{% t product_roadmap_sidechain %}</li>
-              </ul>
-              <label>{% t q2_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t product_roadmap_dex %}</li>
-                <li>{% t product_roadmap_mist %}</li>
-              </ul>
-            </div>
+        <section class="panel">
+          <div class="intro">
+            <h2>{% t roadmap_title %}</h2>
+            <p>{% t roadmap_subline %}</p>
           </div>
+          <div class="inner columns aligned">
 
-          <!-- protocol -->
+            <!-- products -->
 
-          <div class="span-1-75" id="roadmap-structure">
-            <div class="product_list">
-              <div class="product_header">
-                <h3>{% t protocol_title %}</h3>
-              </div>
-              <label>{% t q3_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t protocol_roadmap_snowflake_update%}</li>
-              </ul>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <div id="overlayMist" onclick="offMist()">
-                  <div id="text-mist">{% t text_mist_overlay %}</div>
+            <div class="span-1-75" id="roadmap-structure">
+              <div class="product_list">
+                <div class="product_header">
+                  <h3>{% t product_title %}</h3>
                 </div>
+                <label>{% t q3_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t product_roadmap_wallet %}</li>
+                  <li>{% t product_roadmap_dappstore %}</li>
+                </ul>
+                <label>{% t q4_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t product_roadmap_remittance %}</li>
+                  <li>{% t product_roadmap_voting %}</li>
+                  <li>{% t product_roadmap_donation %}</li>
+                  <li>{% t product_roadmap_lottery %}</li>
+                  <li>{% t product_roadmap_crowdfunding %}</li>
+                </ul>
+                <label>{% t q1_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t product_roadmap_password %}</li>
+                  <li>{% t product_roadmap_dating %}</li>
+                  <li>{% t product_roadmap_gift %}</li>
+                  <li>{% t product_roadmap_freelance %}</li>
+                  <li>{% t product_roadmap_sidechain %}</li>
+                </ul>
+                <label>{% t q2_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t product_roadmap_dex %}</li>
+                  <li>{% t product_roadmap_mist %}</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- protocol -->
+
+            <div class="span-1-75" id="roadmap-structure">
+              <div class="product_list">
+                <div class="product_header">
+                  <h3>{% t protocol_title %}</h3>
+                </div>
+                <label>{% t q3_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t protocol_roadmap_snowflake_update%}</li>
+                </ul>
+                <label>{% t q4_2020 %}</label>
+                <ul class="roadmap_list">
+                  <div id="overlayMist" onclick="offMist()">
+                    <div id="text-mist">{% t text_mist_overlay %}</div>
+                  </div>
                   <li onclick="onMist()" id="overlay-mist">{% t protocol_roadmap_mist_wp %}</li>
-                
-                <div id="overlayRaindrop" onclick="offRaindrop()">
-                  <div id="text-raindrop">{% t text_solidity_update %}</div>
-                </div>
+
+                  <div id="overlayRaindrop" onclick="offRaindrop()">
+                    <div id="text-raindrop">{% t text_solidity_update %}</div>
+                  </div>
                   <li onclick="onRaindrop()" id="overlay-raindrop">{% t protocol_roadmap_raindrop_update %}</li>
-                <li>{% t protocol_roadmap_token_burn %}</li>
-              </ul>
-              <label>{% t q1_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t protocol_roadmap_tide_update %}</li>
-                <li>{% t protocol_roadmap_ice_update %}</li>
-                <li>{% t protocol_roadmap_oracle %}</li>
-                <li>{% t protocol_roadmap_mist %}</li>
-              </ul>
-              <label>{% t q2_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t protocol_roadmap_hail_update %}</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- wallet -->
-
-          <div class="span-1-75" id="roadmap-structure">
-            <div class="product_list">
-              <div class="product_header">
-                <h3>{% t wallet_title %}</h3>
+                  <li>{% t protocol_roadmap_token_burn %}</li>
+                </ul>
+                <label>{% t q1_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t protocol_roadmap_tide_update %}</li>
+                  <li>{% t protocol_roadmap_ice_update %}</li>
+                  <li>{% t protocol_roadmap_oracle %}</li>
+                  <li>{% t protocol_roadmap_mist %}</li>
+                </ul>
+                <label>{% t q2_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t protocol_roadmap_hail_update %}</li>
+                </ul>
               </div>
-              <label>{% t q3_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t wallet_1 %}</li>
-              </ul>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t wallet_7 %}</li>
-                <li>{% t wallet_2 %}</li>
-                <li>{% t wallet_3 %}</li>
-                <li>{% t wallet_4 %}</li>
-              </ul>
-              <label>{% t q1_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t wallet_5 %}</li>
-              </ul>
-              <label>{% t q2_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t wallet_6 %}</li>
-              </ul>
             </div>
-          </div>
 
-          <!-- remittance -->
+            <!-- wallet -->
 
-          <div class="span-1-75" id="roadmap-structure">
-            <div class="product_list">
-              <div class="product_header">
-                <h3>{% t remittance_title %}</h3>
+            <div class="span-1-75" id="roadmap-structure">
+              <div class="product_list">
+                <div class="product_header">
+                  <h3>{% t wallet_title %}</h3>
+                </div>
+                <label>{% t q3_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t wallet_1 %}</li>
+                </ul>
+                <label>{% t q4_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t wallet_7 %}</li>
+                  <li>{% t wallet_2 %}</li>
+                  <li>{% t wallet_3 %}</li>
+                  <li>{% t wallet_4 %}</li>
+                </ul>
+                <label>{% t q1_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t wallet_5 %}</li>
+                </ul>
+                <label>{% t q2_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t wallet_6 %}</li>
+                </ul>
               </div>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t remittance_1 %}</li>
-                <li>{% t remittance_2 %}</li>
-              </ul>
-              <label>{% t q1_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t remittance_5 %}</li>
-                <li>{% t remittance_3 %}</li>
-              </ul>
-              <label>{% t q2_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t remittance_4 %}</li>
-              </ul>
             </div>
-          </div>
 
-          <!-- marketing -->
+            <!-- remittance -->
 
-          <div class="span-1-75" id="roadmap-structure">
-            <div class="product_list">
-              <div class="product_header">
-                <h3>{% t marketing_title %}</h3>
+            <div class="span-1-75" id="roadmap-structure">
+              <div class="product_list">
+                <div class="product_header">
+                  <h3>{% t remittance_title %}</h3>
+                </div>
+                <label>{% t q4_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t remittance_1 %}</li>
+                  <li>{% t remittance_2 %}</li>
+                </ul>
+                <label>{% t q1_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t remittance_5 %}</li>
+                  <li>{% t remittance_3 %}</li>
+                </ul>
+                <label>{% t q2_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t remittance_4 %}</li>
+                </ul>
               </div>
-              <label>{% t q4_2020 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t marketing_1 %}</li>
-                <li>{% t marketing_2 %}</li>
-                <li>{% t marketing_3 %}</li>
-                <li>{% t marketing_4 %}</li>
-                <li>{% t marketing_5 %}</li>
-                <li>{% t marketing_6 %}</li>
-                <li>{% t marketing_7 %}</li>
-                <li>{% t marketing_8 %}</li>
-                <li>{% t marketing_9 %}</li>
-              </ul>
-              <label>{% t q1_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t marketing_10 %}</li>
-                <li>{% t marketing_11 %}</li>
-              </ul>
-              <label>{% t q2_2021 %}</label>
-              <ul class="roadmap_list">
-                <li>{% t marketing_12 %}</li>
-              </ul>
+            </div>
+
+            <!-- marketing -->
+
+            <div class="span-1-75" id="roadmap-structure">
+              <div class="product_list">
+                <div class="product_header">
+                  <h3>{% t marketing_title %}</h3>
+                </div>
+                <label>{% t q4_2020 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t marketing_1 %}</li>
+                  <li>{% t marketing_2 %}</li>
+                  <li>{% t marketing_3 %}</li>
+                  <li>{% t marketing_4 %}</li>
+                  <li>{% t marketing_5 %}</li>
+                  <li>{% t marketing_6 %}</li>
+                  <li>{% t marketing_7 %}</li>
+                  <li>{% t marketing_8 %}</li>
+                  <li>{% t marketing_9 %}</li>
+                </ul>
+                <label>{% t q1_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t marketing_10 %}</li>
+                  <li>{% t marketing_11 %}</li>
+                </ul>
+                <label>{% t q2_2021 %}</label>
+                <ul class="roadmap_list">
+                  <li>{% t marketing_12 %}</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
 
-        <!-- Exchanges & Partners section -->
-        <div class="animated-border">
+      <!-- Exchanges & Partners section -->
+      <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro" id="blog-structure">
-          <h2><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer"
-              style="padding-left:1rem;">{% t blog_title %}</a></h2>
-          <br>
-          <span id="blog-feed">{% t loading %}</span> <br>
-        </div>
-        <div class="inner columns aligned" id="exchanges-partner-structure">
-          <div class="exchanges_column">
-            <h3 id="exchanges-partner-title-structure">{% t exchanges_title %}</h3>
-            <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/bittrex.png" alt="bittrex" /></a>
-            <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/coinex.png" alt="coinex" /></a>
-            <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/bitforex.png" alt="bitforex" /></a>
-            <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/liquid.png" alt="liquid" /></a>
-            <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/bitsdaq.png" alt="bitsdaq" /></a>
-            
+        <section class="panel">
+          <div class="intro" id="blog-structure">
+            <h2><a href="https://projecthydro.org/blog" target="_blank" rel="noreferrer"
+                style="padding-left:1rem;">{% t blog_title %}</a></h2>
+            <br>
+            <span id="blog-feed">{% t loading %}</span> <br>
           </div>
-          <div class="exchanges_column" id="exchange-column-2">
-            <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/mercatox.png" alt="mercatox" /></a>
-              <a href="https://trade.buyucoin.com/trade/HYDRO-INR" target="_blank" rel="noreferrer">
-                <img class="exchange-pic" src="assets/images/exchanges/buyucoin.png" alt="buyucoin" /></a>
-            <!-- <a target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/uniswap.png" alt="uniswap" /></a> -->
-            <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/bitmart.png" alt="bitmart" /></a>
+          <div class="inner columns aligned" id="exchanges-partner-structure">
+
+            
+              <!-- Info about exchanges supporting the swap -->            
+            <!-- <div class="exchanges_column">
+              <button type="button" class="collapsible">{% t swap_title %}</button>
+              <div class="content">
+                {% t swap_info %}
+              </div>
+            </div> -->
+
+            <div class="exchanges_column">
+              <h3 id="exchanges-partner-title-structure">{% t exchanges_title %}</h3>
+
+              
+
+              <div class="tooltip">
+                <a href="https://global.bittrex.com/Market/Index?MarketName=BTC-HYDRO" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/bittrex.png" alt="bittrex" /></a>
+                <span class="tooltiptext">{% t tooltip_bittrex %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://www.coinex.com/exchange?currency=btc&dest=hydro" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/coinex.png" alt="coinex" /></a>
+                <span class="tooltiptext">{% t tooltip_coinex %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://www.bitforex.com/en/spot/hydro_eth" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/bitforex.png" alt="bitforex" /></a>
+                <span class="tooltiptext">{% t tooltip_bitforex %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://app.liquid.com/exchange/HYDROBTC" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/liquid.png" alt="liquid" /></a>
+                <span class="tooltiptext">{% t tooltip_liquid %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://bq.net/trade/HYDRO-BTC" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/bitsdaq.png" alt="bitsdaq" /></a>
+                <span class="tooltiptext">{% t tooltip_bitsdaq %}</span>
+              </div>
+
+            </div>
+
+            <div class="exchanges_column" id="exchange-column-2">
+
+              <div class="tooltip">
+                <a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/mercatox.png" alt="mercatox" /></a>
+                <span class="tooltiptext">{% t tooltip_mercatox %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://trade.buyucoin.com/trade/HYDRO-INR" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/buyucoin.png" alt="buyucoin" /></a>
+                <span class="tooltiptext">{% t tooltip_buyucoin %}</span>
+              </div>
+
+              <div class="tooltip">
+                <a href="https://www.bitmart.com/trade/en?symbol=HYDRO_BTC" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/bitmart.png" alt="bitmart" /></a>
+                <span class="tooltiptext">{% t tooltip_bitmart %}</span>
+              </div>
+
+              <!-- <div class="tooltip">
             <a href="https://idex.market/eth/hydro" target="_blank" rel="noreferrer">
               <img class="exchange-pic" src="assets/images/exchanges/idex.png" alt="idex" /></a>
-            <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer">
-              <img class="exchange-pic" src="assets/images/exchanges/stex.png" alt="stex" /></a>
-          </div>
-        </div>
-        <div class="inner columns aligned" id="partner-structure">
-          <div class="partner_column">
-            <h3>{% t partners_integration_title %}</h3>
-            <a href="https://chain.link/" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/chainlink.png" alt="chainlin" /></a>
-            <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/sparkpoint.png" alt="sparkpoint" /></a>
-            <a href="https://tusc.network/" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/tusc.png" alt="tusc" /></a>
-            <a href="https://ethernity.live/en/" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/ethernity.png" alt="ethernity" /></a>
-            <a href="https://twitter.com/bloceducare" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/bloceducare.png" alt="bloceducare" /></a>
-            <a href="https://www.emedchain.com/" target="_blank" rel="noreferrer">
-              <img class="partner-pic" src="assets/images/partners/emedchain.png" alt="emedchain" /></a>
-          </div>
-          <div class="inner columns aligned" id="partner-structure">
-            <div class="partner_column">
-              <h3>{% t partners_media_title %}</h3>
-              <a href="https://coinnewsextra.com/" target="_blank" rel="noreferrer">
-                <img class="partner-pic" src="assets/images/partners/coinnewsextra.png" alt="coinnewsextra" /></a>
-              <a href="https://cryptonewsnet.com/" target="_blank" rel="noreferrer">
-                <img class="partner-pic" src="assets/images/partners/coinnewsnet.png" alt="cryptonewsnet" /></a>
+              <span class="tooltiptext">{% t tooltip_idex %}</span>
+            </div> -->
+
+              <div class="tooltip">
+                <a href="https://app.stex.com/en/trade/pair/BTC/HYDRO" target="_blank" rel="noreferrer">
+                  <img class="exchange-pic" src="assets/images/exchanges/stex.png" alt="stex" /></a>
+                <span class="tooltiptext">{% t tooltip_stex %}</span>
+              </div>
+
             </div>
           </div>
 
-          <!-- legal section -->
+          <div class="inner columns aligned" id="partner-structure">
+            <div class="partner_column">
+              <h3>{% t partners_integration_title %}</h3>
+              <a href="https://chain.link/" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/chainlink.png" alt="chainlin" /></a>
+              <a href="https://sparkpoint.io/" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/sparkpoint.png" alt="sparkpoint" /></a>
+              <a href="https://tusc.network/" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/tusc.png" alt="tusc" /></a>
+              <a href="https://ethernity.live/en/" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/ethernity.png" alt="ethernity" /></a>
+              <a href="https://twitter.com/bloceducare" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/bloceducare.png" alt="bloceducare" /></a>
+              <a href="https://www.emedchain.com/" target="_blank" rel="noreferrer">
+                <img class="partner-pic" src="assets/images/partners/emedchain.png" alt="emedchain" /></a>
+            </div>
+            <div class="inner columns aligned" id="partner-structure">
+              <div class="partner_column">
+                <h3>{% t partners_media_title %}</h3>
+                <a href="https://coinnewsextra.com/" target="_blank" rel="noreferrer">
+                  <img class="partner-pic" src="assets/images/partners/coinnewsextra.png" alt="coinnewsextra" /></a>
+                <a href="https://cryptonewsnet.com/" target="_blank" rel="noreferrer">
+                  <img class="partner-pic" src="assets/images/partners/coinnewsnet.png" alt="cryptonewsnet" /></a>
+              </div>
+            </div>
 
-          <!-- <div class="inner columns aligned" id="partner-structure">
+            <!-- legal section -->
+
+            <!-- <div class="inner columns aligned" id="partner-structure">
             <div class="partner_column">
               <h3>Legal Partner</h3>
               <a href="" target="_blank" rel="noreferrer"><img class="partner-pic" src="assets/images/partners/" /></a>
             </div>
           </div> -->
 
-          <!-- Documentation overlay -->
+            <!-- Documentation overlay -->
 
-          <div id="overlayDocs" onclick="closeDocs()">
-            <div id="text-Docs">
-              <div class="broaden">
-                <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros Github</a>
-                <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our Documentation</a>
-                <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
+            <div id="overlayDocs" onclick="closeDocs()">
+              <div id="text-Docs">
+                <div class="broaden">
+                  <a href="https://github.com/HydroBlockchain" target="_blank" rel="noreferrer">Visit Project Hydros
+                    Github</a>
+                  <a href="https://github.com/HydroBlockchain/Hydro-Docs" target="_blank" rel="noreferrer">Review our
+                    Documentation</a>
+                  <a href="https://projecthydro.org/blog/hydrowallet-privacy-policy/" target="_blank" rel="noreferrer">{% t privacy_1 %}</a>
+                  
+                </div>
               </div>
             </div>
-          </div>
-      </section>
-    </div>
+        </section>
+      </div>
 
       <!-- Social media section -->
       <div class="animated-border">
 
-      <section class="panel">
-        <div class="intro">
-          <h2>{% t dappstore_title %}</h2>
-          <p>{% t dappstore_subline %}</p><br>
-          <a href="https://snowflakestore.org" target="_blank" rel="noreferrer" class="button">Snowflake Store</a><br>
-          <a href="https://aegirwallet.org" target="_blank" rel="noreferrer" class="button">AegirWallet</a><br>
-          <a onclick="overlayDocs()" class="button">{% t documentation_title %}</a>
-        </div>
-        <div class="inner columns divided" id="footer-structure">
-          <div class="span-1-2">
-            <ul class="contact-icons">
-              <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-twitter transparent-icon" onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-medium transparent-icon" onclick="location.href='https://projecthydro.medium.com'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-linkedin transparent-icon" onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank" rel="noreferrer"></li>
-            </ul>
-            <ul class="contact-icons">
-              <li class="icon brands fa-facebook transparent-icon" onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-reddit transparent-icon" onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-instagram transparent-icon" onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'" target="_blank" rel="noreferrer"></li>
-              <li class="icon brands fa-youtube transparent-icon" onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank" rel="noreferrer"></li>
-            </ul>
+        <section class="panel">
+          <div class="intro">
+            <h2>{% t dappstore_title %}</h2>
+            <p>{% t dappstore_subline %}</p><br>
+            <a href="https://snowflakestore.org" target="_blank" rel="noreferrer" class="button">Snowflake Store</a><br>
+            <a href="https://aegirwallet.org" target="_blank" rel="noreferrer" class="button">AegirWallet</a><br>
+            <a onclick="overlayDocs()" class="button">{% t documentation_title %}</a>
           </div>
-        </div>
-      </section>
-    </div>
+          <div class="inner columns divided" id="footer-structure">
+            <div class="span-1-2">
+              <ul class="contact-icons">
+                <li class="icon brands fa-telegram transparent-icon" onclick="location.href='https://t.me/projecthydro'"
+                  target="_blank" rel="noreferrer"></li>
+                <li class="icon brands fa-twitter transparent-icon"
+                  onclick="location.href='https://twitter.com/HydroBlockchain'" target="_blank" rel="noreferrer"></li>
+                <li class="icon brands fa-medium transparent-icon"
+                  onclick="location.href='https://projecthydro.medium.com'" target="_blank" rel="noreferrer"></li>
+                <li class="icon brands fa-linkedin transparent-icon"
+                  onclick="location.href='https://www.linkedin.com/company/hydroblockchain'" target="_blank"
+                  rel="noreferrer"></li>
+              </ul>
+              <ul class="contact-icons">
+                <li class="icon brands fa-facebook transparent-icon"
+                  onclick="location.href='https://www.facebook.com/project.hydro.blockchain'" target="_blank"
+                  rel="noreferrer"></li>
+                <li class="icon brands fa-reddit transparent-icon"
+                  onclick="location.href='https://www.reddit.com/r/projecthydro'" target="_blank" rel="noreferrer"></li>
+                <li class="icon brands fa-instagram transparent-icon"
+                  onclick="location.href='https://www.instagram.com/projecthydroblockchain/?igshid=1w8gauedq9ata'"
+                  target="_blank" rel="noreferrer"></li>
+                <li class="icon brands fa-youtube transparent-icon"
+                  onclick="location.href='https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw'" target="_blank"
+                  rel="noreferrer"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Scripts -->
       {% include body_javascripts.html %}
+
+      <script>var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }</script>
 
 </body>
 

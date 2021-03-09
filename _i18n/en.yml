@@ -170,6 +170,18 @@ dappstore_subline: Discover project Hydros dAppstore and try out some dApps!
 # Exchanges
 exchanges_title: Exchanges
 
+# Exchanges tooltips
+tooltip_bittrex: In process, will support the new ERC20 token.
+tooltip_coinex: Full support for the Hydro swap, BEP20 & ERC20.
+tooltip_mercatox: In process, will support the new ERC20 token.
+tooltip_buyucoin: In process, will support the new ERC20 token.
+tooltip_bitmart: In process, will support the new ERC20 token.
+tooltip_stex: In process, will support the new ERC20 token.
+tooltip_idex: Supports the Hydro swap
+tooltip_bitforex: Supports the Hydro swap
+tooltip_liquid: Supports the Hydro swap
+tooltip_bitsdaq: Supports the Hydro swap
+
 # Partners
 partners_media_title: Media Partners
 partners_integration_title: Integration Partners
@@ -198,3 +210,11 @@ snippets_3: Use Material imports
 # Privacy Policy
 privacy_title: Privacy Policy
 privacy_1: Privacy Policy
+
+# Alert
+initial_warning: Warning!
+content_warning: Do not trade the old Hydro contract on Uniswap or IDEX!
+
+#swap
+swap_title: Supported exchanges
+swap_info: Information about supported exchanges
