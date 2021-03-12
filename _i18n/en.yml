@@ -178,9 +178,9 @@ tooltip_buyucoin: In process, will support the new ERC20 token.
 tooltip_bitmart: In process, will support the new ERC20 token.
 tooltip_stex: In process, will support the new ERC20 token.
 tooltip_idex: Supports the Hydro swap
-tooltip_bitforex: Supports the Hydro swap
-tooltip_liquid: Supports the Hydro swap
-tooltip_bitsdaq: Supports the Hydro swap
+tooltip_bitforex: In process, will support the new ERC20 token.
+tooltip_liquid: In process, will support the new ERC20 token.
+tooltip_bitsdaq: In process, will support the new ERC20 token.
 
 # Partners
 partners_media_title: Media Partners
