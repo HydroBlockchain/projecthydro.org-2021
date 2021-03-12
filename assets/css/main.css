@@ -156,7 +156,7 @@ a {
 
 b {
   color: rgba(255, 255, 255, .875);
-  font-weight: 400
+  font-weight: 400;
 }
 
 i {
@@ -1808,7 +1808,7 @@ canvas {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100px;
+  height: 120px;
   top: 3rem;
   padding: 10px;
   background-color: #9e9e9e;
@@ -1832,8 +1832,15 @@ canvas {
   font-weight: 900;
 }
 
+#warning_alert, b{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0!important;
+  color: black!important;
+}
+
 .closebtn {
-  margin-left: 15px;
+  margin-left: 5px;
   color: rgb(0, 0, 0) !important;
   font-weight: bold;
   float: right;
@@ -2729,11 +2736,6 @@ canvas {
     margin: 1rem;
     margin-top: -1rem;
   }
-
-  .alert_text {
-    margin-left: 2rem;
-  }
-
 }
 
 @media screen and (max-width:550px) {
@@ -2763,10 +2765,6 @@ canvas {
     z-index: +1000 !important;
     margin: 1rem;
     margin-top: -1rem;
-  }
-
-  .alert_text {
-    margin-left: 2rem;
   }
 
 }
@@ -2840,9 +2838,6 @@ canvas {
     margin-top: -1rem;
   }
 
-  .alert_text {
-    margin-left: 2rem;
-  }
 
 }
 
@@ -2873,11 +2868,13 @@ canvas {
     margin: 1rem;
     margin-top: -1rem;
   }
-
-  .alert_text {
-    margin-left: 2rem;
+  #alert_text, b{
+    font-size: 13px!important;
   }
-
+  .closebtn{
+    margin-left: 0!important;
+    margin-right: 5px !important;
+  }
 }
 
 @media screen and (max-width:350px) {
@@ -2911,10 +2908,6 @@ canvas {
     z-index: +1000 !important;
     margin: 1rem;
     margin-top: -1rem;
-  }
-
-  .alert_text {
-    margin-left: 2rem;
   }
 
 }
@@ -2951,9 +2944,14 @@ canvas {
     margin: 1rem;
     margin-top: -1rem;
   }
+  
+  #alert_text, b{
+    font-size: 10px!important;
+  }
+  .closebtn{
+    margin-left: 0!important;
+    margin-right: 5px !important;
 
-  .alert_text {
-    margin-left: 2rem;
   }
 
 }

@@ -213,7 +213,7 @@ privacy_1: Privacy Policy
 
 # Alert
 initial_warning: Warning!
-content_warning: Do not trade the old Hydro contract on Uniswap or IDEX!
+content_warning: Do not trade the old Hydro contract <br> <b> (0xebbdf302c940c6bfd49c6b165f457fdb324649bc) </b> on Uniswap or IDEX!
 
 #swap
 swap_title: Supported exchanges
