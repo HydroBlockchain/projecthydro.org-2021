@@ -36,7 +36,7 @@ team_contact: Kontakta oss
 team_saurav: President
 team_carl: Vice President
 team_alexander: Sekreterare
-team_srinivas: Chefs Teknologi officerare
+team_srinivas: CPO
 team_rai: Community Ledare
 team_stephen: Marketing Chef
 team_ana: Social Media Chef
@@ -50,12 +50,8 @@ team_dell: Marketing & Designer
 team_pri: Skribent
 team_aijhon: Affärs Utvecklare
 team_folo: Affärs Utvecklare
-team_ayu: Solidity Utvecklare
-team_sam: Solidity Utvecklare
+team_ayu: CTO
 team_marlo: Grafisk Designer
-team_aditya: Utvecklare
-team_hanna: UI/UX Designer
-team_murphy: Produkt Chef
 
 # contact us
 contact_name: Namn

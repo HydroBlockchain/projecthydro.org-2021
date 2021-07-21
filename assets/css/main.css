@@ -2670,6 +2670,14 @@ canvas {
     margin-bottom: 2rem !important
   }
 
+  #second_column{
+    margin-top: 0rem!important;
+  }
+
+  #third_column{
+    margin-right: 0rem !important;
+  }
+
   .exchanges_column {
     padding-top: 0 !important
   }
@@ -2954,4 +2962,12 @@ canvas {
 
   }
 
+}
+
+#second_column{
+  margin-top: 3rem;
+}
+
+#third_column{
+  margin-right: 4rem;
 }
