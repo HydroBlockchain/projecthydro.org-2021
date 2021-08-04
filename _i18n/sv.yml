@@ -35,23 +35,16 @@ team_contact: Kontakta oss
 #team position
 team_saurav: President
 team_carl: Vice President
-team_alexander: Sekreterare
 team_srinivas: CPO
 team_rai: Community Ledare
 team_stephen: Marketing Chef
-team_ana: Social Media Chef
 team_jignesh: Skribent & Utvecklare
-team_njoku: Solidity Utvecklare
-team_devis: Fullstack Utvecklare
-team_naveen: Machine Learning Ingenjör
-team_mathew: Machine Learning Ingenjör
 team_phi: Community Chef
 team_dell: Marketing & Designer
-team_pri: Skribent
-team_aijhon: Affärs Utvecklare
-team_folo: Affärs Utvecklare
 team_ayu: CTO
 team_marlo: Grafisk Designer
+team_bogdan: Spelutvecklare
+team_yash: Marketing Praktikant
 
 # contact us
 contact_name: Namn
